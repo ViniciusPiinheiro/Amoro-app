@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CB10AE825F012F4009F53F4 /* Amoro-app WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5CB10AE725F012F4009F53F4 /* Amoro-app WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CB10AEE25F012F4009F53F4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB10AEC25F012F4009F53F4 /* Interface.storyboard */; };
+		5CB10AF025F012F5009F53F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB10AEF25F012F5009F53F4 /* Assets.xcassets */; };
+		5CB10AF725F012F6009F53F4 /* Amoro-app WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5CB10AF625F012F6009F53F4 /* Amoro-app WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CB10AFC25F012F6009F53F4 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10AFB25F012F6009F53F4 /* HostingController.swift */; };
+		5CB10AFE25F012F6009F53F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10AFD25F012F6009F53F4 /* ContentView.swift */; };
+		5CB10B0025F012F6009F53F4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10AFF25F012F6009F53F4 /* ExtensionDelegate.swift */; };
+		5CB10B0225F012F6009F53F4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10B0125F012F6009F53F4 /* NotificationController.swift */; };
+		5CB10B0425F012F6009F53F4 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10B0325F012F6009F53F4 /* NotificationView.swift */; };
+		5CB10B0625F012F6009F53F4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10B0525F012F6009F53F4 /* ComplicationController.swift */; };
+		5CB10B0825F012F6009F53F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB10B0725F012F6009F53F4 /* Assets.xcassets */; };
+		5CB10B0B25F012F6009F53F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB10B0A25F012F6009F53F4 /* Preview Assets.xcassets */; };
+		5CB10B3125F01466009F53F4 /* Feedback-Pairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10B3025F01466009F53F4 /* Feedback-Pairing.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CB10AE925F012F4009F53F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CB10ADD25F012F4009F53F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CB10AE625F012F4009F53F4;
+			remoteInfo = "Amoro-app WatchKit App";
+		};
+		5CB10AF825F012F6009F53F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CB10ADD25F012F4009F53F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CB10AF525F012F6009F53F4;
+			remoteInfo = "Amoro-app WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5CB10B1325F012F6009F53F4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5CB10AF725F012F6009F53F4 /* Amoro-app WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB10B1725F012F6009F53F4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5CB10AE825F012F4009F53F4 /* Amoro-app WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5CB10AE325F012F4009F53F4 /* Amoro-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amoro-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB10AE725F012F4009F53F4 /* Amoro-app WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amoro-app WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB10AED25F012F4009F53F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5CB10AEF25F012F5009F53F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CB10AF125F012F5009F53F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CB10AF625F012F6009F53F4 /* Amoro-app WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Amoro-app WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB10AFB25F012F6009F53F4 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		5CB10AFD25F012F6009F53F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5CB10AFF25F012F6009F53F4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5CB10B0125F012F6009F53F4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5CB10B0325F012F6009F53F4 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		5CB10B0525F012F6009F53F4 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		5CB10B0725F012F6009F53F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CB10B0A25F012F6009F53F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CB10B0C25F012F6009F53F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CB10B0D25F012F6009F53F4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5CB10B3025F01466009F53F4 /* Feedback-Pairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feedback-Pairing.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CB10AF325F012F6009F53F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CB10ADC25F012F4009F53F4 = {
+			isa = PBXGroup;
+			children = (
+				5CB10AEB25F012F4009F53F4 /* Amoro-app WatchKit App */,
+				5CB10AFA25F012F6009F53F4 /* Amoro-app WatchKit Extension */,
+				5CB10AE425F012F4009F53F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CB10AE425F012F4009F53F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CB10AE325F012F4009F53F4 /* Amoro-app.app */,
+				5CB10AE725F012F4009F53F4 /* Amoro-app WatchKit App.app */,
+				5CB10AF625F012F6009F53F4 /* Amoro-app WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CB10AEB25F012F4009F53F4 /* Amoro-app WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5CB10AEC25F012F4009F53F4 /* Interface.storyboard */,
+				5CB10AEF25F012F5009F53F4 /* Assets.xcassets */,
+				5CB10AF125F012F5009F53F4 /* Info.plist */,
+			);
+			path = "Amoro-app WatchKit App";
+			sourceTree = "<group>";
+		};
+		5CB10AFA25F012F6009F53F4 /* Amoro-app WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5CB10AFB25F012F6009F53F4 /* HostingController.swift */,
+				5CB10AFD25F012F6009F53F4 /* ContentView.swift */,
+				5CB10B3025F01466009F53F4 /* Feedback-Pairing.swift */,
+				5CB10AFF25F012F6009F53F4 /* ExtensionDelegate.swift */,
+				5CB10B0125F012F6009F53F4 /* NotificationController.swift */,
+				5CB10B0325F012F6009F53F4 /* NotificationView.swift */,
+				5CB10B0525F012F6009F53F4 /* ComplicationController.swift */,
+				5CB10B0725F012F6009F53F4 /* Assets.xcassets */,
+				5CB10B0C25F012F6009F53F4 /* Info.plist */,
+				5CB10B0D25F012F6009F53F4 /* PushNotificationPayload.apns */,
+				5CB10B0925F012F6009F53F4 /* Preview Content */,
+			);
+			path = "Amoro-app WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5CB10B0925F012F6009F53F4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5CB10B0A25F012F6009F53F4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CB10AE225F012F4009F53F4 /* Amoro-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CB10B1825F012F6009F53F4 /* Build configuration list for PBXNativeTarget "Amoro-app" */;
+			buildPhases = (
+				5CB10AE125F012F4009F53F4 /* Resources */,
+				5CB10B1725F012F6009F53F4 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CB10AEA25F012F4009F53F4 /* PBXTargetDependency */,
+			);
+			name = "Amoro-app";
+			productName = "Amoro-app";
+			productReference = 5CB10AE325F012F4009F53F4 /* Amoro-app.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		5CB10AE625F012F4009F53F4 /* Amoro-app WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CB10B1425F012F6009F53F4 /* Build configuration list for PBXNativeTarget "Amoro-app WatchKit App" */;
+			buildPhases = (
+				5CB10AE525F012F4009F53F4 /* Resources */,
+				5CB10B1325F012F6009F53F4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CB10AF925F012F6009F53F4 /* PBXTargetDependency */,
+			);
+			name = "Amoro-app WatchKit App";
+			productName = "Amoro-app WatchKit App";
+			productReference = 5CB10AE725F012F4009F53F4 /* Amoro-app WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5CB10AF525F012F6009F53F4 /* Amoro-app WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CB10B1025F012F6009F53F4 /* Build configuration list for PBXNativeTarget "Amoro-app WatchKit Extension" */;
+			buildPhases = (
+				5CB10AF225F012F6009F53F4 /* Sources */,
+				5CB10AF325F012F6009F53F4 /* Frameworks */,
+				5CB10AF425F012F6009F53F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Amoro-app WatchKit Extension";
+			productName = "Amoro-app WatchKit Extension";
+			productReference = 5CB10AF625F012F6009F53F4 /* Amoro-app WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CB10ADD25F012F4009F53F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5CB10AE225F012F4009F53F4 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					5CB10AE625F012F4009F53F4 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					5CB10AF525F012F6009F53F4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 5CB10AE025F012F4009F53F4 /* Build configuration list for PBXProject "Amoro-app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CB10ADC25F012F4009F53F4;
+			productRefGroup = 5CB10AE425F012F4009F53F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CB10AE225F012F4009F53F4 /* Amoro-app */,
+				5CB10AE625F012F4009F53F4 /* Amoro-app WatchKit App */,
+				5CB10AF525F012F6009F53F4 /* Amoro-app WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CB10AE125F012F4009F53F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB10AE525F012F4009F53F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB10AF025F012F5009F53F4 /* Assets.xcassets in Resources */,
+				5CB10AEE25F012F4009F53F4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB10AF425F012F6009F53F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB10B0B25F012F6009F53F4 /* Preview Assets.xcassets in Resources */,
+				5CB10B0825F012F6009F53F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CB10AF225F012F6009F53F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB10AFE25F012F6009F53F4 /* ContentView.swift in Sources */,
+				5CB10AFC25F012F6009F53F4 /* HostingController.swift in Sources */,
+				5CB10B0225F012F6009F53F4 /* NotificationController.swift in Sources */,
+				5CB10B0025F012F6009F53F4 /* ExtensionDelegate.swift in Sources */,
+				5CB10B0425F012F6009F53F4 /* NotificationView.swift in Sources */,
+				5CB10B3125F01466009F53F4 /* Feedback-Pairing.swift in Sources */,
+				5CB10B0625F012F6009F53F4 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CB10AEA25F012F4009F53F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CB10AE625F012F4009F53F4 /* Amoro-app WatchKit App */;
+			targetProxy = 5CB10AE925F012F4009F53F4 /* PBXContainerItemProxy */;
+		};
+		5CB10AF925F012F6009F53F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CB10AF525F012F6009F53F4 /* Amoro-app WatchKit Extension */;
+			targetProxy = 5CB10AF825F012F6009F53F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5CB10AEC25F012F4009F53F4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CB10AED25F012F4009F53F4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CB10B0E25F012F6009F53F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CB10B0F25F012F6009F53F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CB10B1125F012F6009F53F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Amoro-app WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = NV6658KLR4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Amoro-app WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viniciuspinheiro.Amoro-app.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		5CB10B1225F012F6009F53F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Amoro-app WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = NV6658KLR4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Amoro-app WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viniciuspinheiro.Amoro-app.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		5CB10B1525F012F6009F53F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NV6658KLR4;
+				IBSC_MODULE = Amoro_app_WatchKit_Extension;
+				INFOPLIST_FILE = "Amoro-app WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viniciuspinheiro.Amoro-app.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Amoro-app WatchKit Extension/Amoro-app WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		5CB10B1625F012F6009F53F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NV6658KLR4;
+				IBSC_MODULE = Amoro_app_WatchKit_Extension;
+				INFOPLIST_FILE = "Amoro-app WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viniciuspinheiro.Amoro-app.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Amoro-app WatchKit Extension/Amoro-app WatchKit App-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		5CB10B1925F012F6009F53F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NV6658KLR4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viniciuspinheiro.Amoro-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Amoro-app WatchKit Extension/Amoro-app-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5CB10B1A25F012F6009F53F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NV6658KLR4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viniciuspinheiro.Amoro-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Amoro-app WatchKit Extension/Amoro-app-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CB10AE025F012F4009F53F4 /* Build configuration list for PBXProject "Amoro-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CB10B0E25F012F6009F53F4 /* Debug */,
+				5CB10B0F25F012F6009F53F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CB10B1025F012F6009F53F4 /* Build configuration list for PBXNativeTarget "Amoro-app WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CB10B1125F012F6009F53F4 /* Debug */,
+				5CB10B1225F012F6009F53F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CB10B1425F012F6009F53F4 /* Build configuration list for PBXNativeTarget "Amoro-app WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CB10B1525F012F6009F53F4 /* Debug */,
+				5CB10B1625F012F6009F53F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CB10B1825F012F6009F53F4 /* Build configuration list for PBXNativeTarget "Amoro-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CB10B1925F012F6009F53F4 /* Debug */,
+				5CB10B1A25F012F6009F53F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CB10ADD25F012F4009F53F4 /* Project object */;
+}
