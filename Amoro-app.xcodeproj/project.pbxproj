@@ -21,6 +21,8 @@
 		5CB10B0B25F012F6009F53F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB10B0A25F012F6009F53F4 /* Preview Assets.xcassets */; };
 		5CB10B3125F01466009F53F4 /* Feedback-Pairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10B3025F01466009F53F4 /* Feedback-Pairing.swift */; };
 		5CB10B4A25F01864009F53F4 /* Caregory-Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10B4925F01864009F53F4 /* Caregory-Menu.swift */; };
+		C3AEA91B25F01EF400B62B41 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3AEA91A25F01EF400B62B41 /* CloudKit.framework */; };
+		C3AEA92025F0217B00B62B41 /* Categorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AEA91F25F0217B00B62B41 /* Categorias.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,9 @@
 		5CB10B0D25F012F6009F53F4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		5CB10B3025F01466009F53F4 /* Feedback-Pairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feedback-Pairing.swift"; sourceTree = "<group>"; };
 		5CB10B4925F01864009F53F4 /* Caregory-Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Caregory-Menu.swift"; sourceTree = "<group>"; };
+		C3AEA91825F01EED00B62B41 /* Amoro-app WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Amoro-app WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		C3AEA91A25F01EF400B62B41 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		C3AEA91F25F0217B00B62B41 /* Categorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorias.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3AEA91B25F01EF400B62B41 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +109,7 @@
 				5CB10AEB25F012F4009F53F4 /* Amoro-app WatchKit App */,
 				5CB10AFA25F012F6009F53F4 /* Amoro-app WatchKit Extension */,
 				5CB10AE425F012F4009F53F4 /* Products */,
+				C3AEA91925F01EF400B62B41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +136,7 @@
 		5CB10AFA25F012F6009F53F4 /* Amoro-app WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C3AEA91825F01EED00B62B41 /* Amoro-app WatchKit Extension.entitlements */,
 				5CB10AFB25F012F6009F53F4 /* HostingController.swift */,
 				5CB10AFD25F012F6009F53F4 /* ContentView.swift */,
 				5CB10B3025F01466009F53F4 /* Feedback-Pairing.swift */,
@@ -141,6 +149,7 @@
 				5CB10B0D25F012F6009F53F4 /* PushNotificationPayload.apns */,
 				5CB10B0925F012F6009F53F4 /* Preview Content */,
 				5CB10B4925F01864009F53F4 /* Caregory-Menu.swift */,
+				C3AEA91F25F0217B00B62B41 /* Categorias.swift */,
 			);
 			path = "Amoro-app WatchKit Extension";
 			sourceTree = "<group>";
@@ -151,6 +160,14 @@
 				5CB10B0A25F012F6009F53F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3AEA91925F01EF400B62B41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3AEA91A25F01EF400B62B41 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3AEA92025F0217B00B62B41 /* Categorias.swift in Sources */,
 				5CB10AFE25F012F6009F53F4 /* ContentView.swift in Sources */,
 				5CB10AFC25F012F6009F53F4 /* HostingController.swift in Sources */,
 				5CB10B0225F012F6009F53F4 /* NotificationController.swift in Sources */,
@@ -438,9 +456,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Amoro-app WatchKit Extension/Amoro-app WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Amoro-app WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = NV6658KLR4;
+				DEVELOPMENT_TEAM = 88LW56X3Q3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Amoro-app WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,9 +481,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Amoro-app WatchKit Extension/Amoro-app WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Amoro-app WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = NV6658KLR4;
+				DEVELOPMENT_TEAM = 88LW56X3Q3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Amoro-app WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -543,7 +563,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NV6658KLR4;
+				DEVELOPMENT_TEAM = 88LW56X3Q3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -564,7 +584,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NV6658KLR4;
+				DEVELOPMENT_TEAM = 88LW56X3Q3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
