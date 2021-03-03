@@ -20,6 +20,7 @@
 		5CB10B0825F012F6009F53F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB10B0725F012F6009F53F4 /* Assets.xcassets */; };
 		5CB10B0B25F012F6009F53F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB10B0A25F012F6009F53F4 /* Preview Assets.xcassets */; };
 		5CB10B3125F01466009F53F4 /* Feedback-Pairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10B3025F01466009F53F4 /* Feedback-Pairing.swift */; };
+		5CB10B4A25F01864009F53F4 /* Caregory-Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10B4925F01864009F53F4 /* Caregory-Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		5CB10B0C25F012F6009F53F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CB10B0D25F012F6009F53F4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		5CB10B3025F01466009F53F4 /* Feedback-Pairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feedback-Pairing.swift"; sourceTree = "<group>"; };
+		5CB10B4925F01864009F53F4 /* Caregory-Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Caregory-Menu.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				5CB10B0C25F012F6009F53F4 /* Info.plist */,
 				5CB10B0D25F012F6009F53F4 /* PushNotificationPayload.apns */,
 				5CB10B0925F012F6009F53F4 /* Preview Content */,
+				5CB10B4925F01864009F53F4 /* Caregory-Menu.swift */,
 			);
 			path = "Amoro-app WatchKit Extension";
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				5CB10AFC25F012F6009F53F4 /* HostingController.swift in Sources */,
 				5CB10B0225F012F6009F53F4 /* NotificationController.swift in Sources */,
 				5CB10B0025F012F6009F53F4 /* ExtensionDelegate.swift in Sources */,
+				5CB10B4A25F01864009F53F4 /* Caregory-Menu.swift in Sources */,
 				5CB10B0425F012F6009F53F4 /* NotificationView.swift in Sources */,
 				5CB10B3125F01466009F53F4 /* Feedback-Pairing.swift in Sources */,
 				5CB10B0625F012F6009F53F4 /* ComplicationController.swift in Sources */,
