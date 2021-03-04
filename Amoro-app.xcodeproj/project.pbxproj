@@ -10,6 +10,7 @@
 		5C565B4B25F111FB00B1C9C0 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C565B4A25F111FB00B1C9C0 /* Posts.swift */; };
 		5C887B4325F16C7B0032274D /* CategoryFramePurple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887B4225F16C7B0032274D /* CategoryFramePurple.swift */; };
 		5C887B4B25F17BF10032274D /* PairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887B4A25F17BF10032274D /* PairingView.swift */; };
+		5C887B5625F18A0C0032274D /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887B5525F18A0C0032274D /* SendView.swift */; };
 		5CA4E95125F138B40065DF3D /* SendFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA4E95025F138B40065DF3D /* SendFeedbackView.swift */; };
 		5CB10AE825F012F4009F53F4 /* Amoro-app WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5CB10AE725F012F4009F53F4 /* Amoro-app WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5CB10AEE25F012F4009F53F4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB10AEC25F012F4009F53F4 /* Interface.storyboard */; };
@@ -77,6 +78,7 @@
 		5C565B4A25F111FB00B1C9C0 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		5C887B4225F16C7B0032274D /* CategoryFramePurple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFramePurple.swift; sourceTree = "<group>"; };
 		5C887B4A25F17BF10032274D /* PairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingView.swift; sourceTree = "<group>"; };
+		5C887B5525F18A0C0032274D /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
 		5CA4E95025F138B40065DF3D /* SendFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendFeedbackView.swift; sourceTree = "<group>"; };
 		5CB10AE325F012F4009F53F4 /* Amoro-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amoro-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB10AE725F012F4009F53F4 /* Amoro-app WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amoro-app WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,7 @@
 				5CB10B4925F01864009F53F4 /* MessageSelectionView.swift */,
 				5CA4E95025F138B40065DF3D /* SendFeedbackView.swift */,
 				5C887B4A25F17BF10032274D /* PairingView.swift */,
+				5C887B5525F18A0C0032274D /* SendView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				5CB10B0625F012F6009F53F4 /* ComplicationController.swift in Sources */,
 				5C887B4B25F17BF10032274D /* PairingView.swift in Sources */,
 				5CA4E95125F138B40065DF3D /* SendFeedbackView.swift in Sources */,
+				5C887B5625F18A0C0032274D /* SendView.swift in Sources */,
 				5CF3AA7625F12D7800B13D81 /* CategoryFramePink.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

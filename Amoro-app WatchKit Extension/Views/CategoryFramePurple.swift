@@ -21,7 +21,7 @@ struct CategoryFramePurple: View {
                     .padding(.trailing, 24)
                 Image(iconName)
                     .resizable()
-                    .frame(width: 45, height: 45, alignment: .center)
+                    .frame(width: 40, height: 35, alignment: .center)
                     .cornerRadius(25)
                     .padding(.leading, 20)
             }
@@ -34,6 +34,6 @@ struct CategoryFramePurple: View {
 
 struct CategoryFramePurple_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryFramePink(categoryName: "Test", iconName: "Sample")
+        CategoryFramePurple(categoryName: "Test", iconName: "Sample")
     }
 }

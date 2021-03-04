@@ -29,7 +29,7 @@ struct CategoryFramePink: View {
                     .padding(.trailing, 24)
                 Image(iconName)
                     .resizable()
-                    .frame(width: 45, height: 45, alignment: .center)
+                    .frame(width: 40, height: 35, alignment: .center)
                     .cornerRadius(25)
                     .padding(.leading, 20)
             }

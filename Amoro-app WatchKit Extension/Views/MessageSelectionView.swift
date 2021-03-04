@@ -8,36 +8,22 @@
 import SwiftUI
 
 struct MessageSelectionView: View {
-    
-    
+    var categorySelected = [Posts]()
     var body: some View {
-        List(cute) { (post) in
+        List(categorySelected) { (post) in
             HStack {
-                Image(post.image)
-                    //.aspectRatio(contentMode: .fill)
-                    //.frame(width: 20, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                Spacer()
-                    .frame(width: 8)
+                Circle()
+                    .frame(width: 20, height: 20)
                 Text(post.text)
             }
+            .listRowBackground(Color.red)
         }
+        
     }
 }
 
 struct MessageSelectionView_Previews: PreviewProvider {
     static var previews: some View {
-        MessageSelectionView()
+        MessageSelectionView(categorySelected: Posts.comic)
     }
 }
-
-struct Posts: Identifiable {
-    var id: String
-    var image: String
-    var text: String
-}
-
-let cute = [
-    Posts(id: "1", image: "Icon", text: "Oi"),
-    Posts(id: "2", image: "Icon", text: "Olá"),
-    Posts(id: "3", image: "Icon", text: "Ohayou")
-]

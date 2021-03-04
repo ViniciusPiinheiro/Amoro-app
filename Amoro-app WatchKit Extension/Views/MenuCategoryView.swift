@@ -18,19 +18,31 @@ struct MenuCategoryView: View {
         
         HStack {
             VStack {
-                CategoryFramePurple(categoryName: cute.text, iconName: cute.image)
-                CategoryFramePink(categoryName: poke.text, iconName: poke.image)
+                NavigationLink(destination: MessageSelectionView(categorySelected: Posts.cute)) {
+                    CategoryFramePurple(categoryName: cute.text, iconName: cute.image)
+                }
+                .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                NavigationLink(destination: MessageSelectionView(categorySelected: Posts.poke)) {
+                    CategoryFramePink(categoryName: poke.text, iconName: poke.image)
+                }
+                .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             }
             VStack {
-                CategoryFramePink(categoryName: hot.text, iconName: hot.image)
-                CategoryFramePurple(categoryName: comic.text, iconName: comic.image)
+                NavigationLink(destination: MessageSelectionView(categorySelected: Posts.hot)) {
+                    CategoryFramePink(categoryName: hot.text, iconName: hot.image)
+                }
+                .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                NavigationLink(destination: MessageSelectionView(categorySelected: Posts.comic)) {
+                    CategoryFramePurple(categoryName: comic.text, iconName: comic.image)
+                }
+                .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             }
         }
-
+        
         .navigationBarBackButtonHidden(true)
         .padding(.top, 20)
         
-
+        
         
         
     }
