@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C565B4B25F111FB00B1C9C0 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C565B4A25F111FB00B1C9C0 /* Posts.swift */; };
+		5CA4E95125F138B40065DF3D /* SendFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA4E95025F138B40065DF3D /* SendFeedbackView.swift */; };
 		5CB10AE825F012F4009F53F4 /* Amoro-app WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5CB10AE725F012F4009F53F4 /* Amoro-app WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5CB10AEE25F012F4009F53F4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB10AEC25F012F4009F53F4 /* Interface.storyboard */; };
 		5CB10AF025F012F5009F53F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB10AEF25F012F5009F53F4 /* Assets.xcassets */; };
 		5CB10AF725F012F6009F53F4 /* Amoro-app WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5CB10AF625F012F6009F53F4 /* Amoro-app WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5CB10AFC25F012F6009F53F4 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10AFB25F012F6009F53F4 /* HostingController.swift */; };
-		5CB10AFE25F012F6009F53F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10AFD25F012F6009F53F4 /* ContentView.swift */; };
+		5CB10AFE25F012F6009F53F4 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10AFD25F012F6009F53F4 /* StartView.swift */; };
 		5CB10B0025F012F6009F53F4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10AFF25F012F6009F53F4 /* ExtensionDelegate.swift */; };
 		5CB10B0225F012F6009F53F4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10B0125F012F6009F53F4 /* NotificationController.swift */; };
 		5CB10B0425F012F6009F53F4 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10B0325F012F6009F53F4 /* NotificationView.swift */; };
 		5CB10B0625F012F6009F53F4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10B0525F012F6009F53F4 /* ComplicationController.swift */; };
 		5CB10B0825F012F6009F53F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB10B0725F012F6009F53F4 /* Assets.xcassets */; };
 		5CB10B0B25F012F6009F53F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB10B0A25F012F6009F53F4 /* Preview Assets.xcassets */; };
-		5CB10B3125F01466009F53F4 /* Feedback-Pairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10B3025F01466009F53F4 /* Feedback-Pairing.swift */; };
-		5CB10B4A25F01864009F53F4 /* Caregory-Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10B4925F01864009F53F4 /* Caregory-Menu.swift */; };
+		5CB10B4A25F01864009F53F4 /* MessageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB10B4925F01864009F53F4 /* MessageSelectionView.swift */; };
+		5CF3AA5C25F1278500B13D81 /* PairingFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF3AA5B25F1278500B13D81 /* PairingFeedbackView.swift */; };
+		5CF3AA6725F128AC00B13D81 /* MenuCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF3AA6625F128AC00B13D81 /* MenuCategoryView.swift */; };
+		5CF3AA7625F12D7800B13D81 /* CategoryFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF3AA7525F12D7800B13D81 /* CategoryFrame.swift */; };
 		C3AEA91B25F01EF400B62B41 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3AEA91A25F01EF400B62B41 /* CloudKit.framework */; };
-		C3AEA92025F0217B00B62B41 /* Categorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AEA91F25F0217B00B62B41 /* Categorias.swift */; };
+		C3AEA92025F0217B00B62B41 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AEA91F25F0217B00B62B41 /* Categories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5C565B4A25F111FB00B1C9C0 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		5CA4E95025F138B40065DF3D /* SendFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendFeedbackView.swift; sourceTree = "<group>"; };
 		5CB10AE325F012F4009F53F4 /* Amoro-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amoro-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB10AE725F012F4009F53F4 /* Amoro-app WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amoro-app WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB10AED25F012F4009F53F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -75,7 +81,7 @@
 		5CB10AF125F012F5009F53F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CB10AF625F012F6009F53F4 /* Amoro-app WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Amoro-app WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB10AFB25F012F6009F53F4 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
-		5CB10AFD25F012F6009F53F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5CB10AFD25F012F6009F53F4 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		5CB10AFF25F012F6009F53F4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		5CB10B0125F012F6009F53F4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		5CB10B0325F012F6009F53F4 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -84,11 +90,13 @@
 		5CB10B0A25F012F6009F53F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5CB10B0C25F012F6009F53F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CB10B0D25F012F6009F53F4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		5CB10B3025F01466009F53F4 /* Feedback-Pairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feedback-Pairing.swift"; sourceTree = "<group>"; };
-		5CB10B4925F01864009F53F4 /* Caregory-Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Caregory-Menu.swift"; sourceTree = "<group>"; };
+		5CB10B4925F01864009F53F4 /* MessageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSelectionView.swift; sourceTree = "<group>"; };
+		5CF3AA5B25F1278500B13D81 /* PairingFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingFeedbackView.swift; sourceTree = "<group>"; };
+		5CF3AA6625F128AC00B13D81 /* MenuCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCategoryView.swift; sourceTree = "<group>"; };
+		5CF3AA7525F12D7800B13D81 /* CategoryFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFrame.swift; sourceTree = "<group>"; };
 		C3AEA91825F01EED00B62B41 /* Amoro-app WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Amoro-app WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		C3AEA91A25F01EF400B62B41 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
-		C3AEA91F25F0217B00B62B41 /* Categorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorias.swift; sourceTree = "<group>"; };
+		C3AEA91F25F0217B00B62B41 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +146,8 @@
 			children = (
 				C3AEA91825F01EED00B62B41 /* Amoro-app WatchKit Extension.entitlements */,
 				5CB10AFB25F012F6009F53F4 /* HostingController.swift */,
-				5CB10AFD25F012F6009F53F4 /* ContentView.swift */,
-				5CB10B3025F01466009F53F4 /* Feedback-Pairing.swift */,
+				5CF3AA5725F1273200B13D81 /* Views */,
+				5CF3AA7425F12D3A00B13D81 /* Data */,
 				5CB10AFF25F012F6009F53F4 /* ExtensionDelegate.swift */,
 				5CB10B0125F012F6009F53F4 /* NotificationController.swift */,
 				5CB10B0325F012F6009F53F4 /* NotificationView.swift */,
@@ -148,8 +156,6 @@
 				5CB10B0C25F012F6009F53F4 /* Info.plist */,
 				5CB10B0D25F012F6009F53F4 /* PushNotificationPayload.apns */,
 				5CB10B0925F012F6009F53F4 /* Preview Content */,
-				5CB10B4925F01864009F53F4 /* Caregory-Menu.swift */,
-				C3AEA91F25F0217B00B62B41 /* Categorias.swift */,
 			);
 			path = "Amoro-app WatchKit Extension";
 			sourceTree = "<group>";
@@ -160,6 +166,28 @@
 				5CB10B0A25F012F6009F53F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5CF3AA5725F1273200B13D81 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5CB10AFD25F012F6009F53F4 /* StartView.swift */,
+				5CF3AA5B25F1278500B13D81 /* PairingFeedbackView.swift */,
+				5CF3AA7525F12D7800B13D81 /* CategoryFrame.swift */,
+				5CF3AA6625F128AC00B13D81 /* MenuCategoryView.swift */,
+				5CB10B4925F01864009F53F4 /* MessageSelectionView.swift */,
+				5CA4E95025F138B40065DF3D /* SendFeedbackView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5CF3AA7425F12D3A00B13D81 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C3AEA91F25F0217B00B62B41 /* Categories.swift */,
+				5C565B4A25F111FB00B1C9C0 /* Posts.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		C3AEA91925F01EF400B62B41 /* Frameworks */ = {
@@ -299,15 +327,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3AEA92025F0217B00B62B41 /* Categorias.swift in Sources */,
-				5CB10AFE25F012F6009F53F4 /* ContentView.swift in Sources */,
+				C3AEA92025F0217B00B62B41 /* Categories.swift in Sources */,
+				5CF3AA6725F128AC00B13D81 /* MenuCategoryView.swift in Sources */,
+				5CB10AFE25F012F6009F53F4 /* StartView.swift in Sources */,
 				5CB10AFC25F012F6009F53F4 /* HostingController.swift in Sources */,
 				5CB10B0225F012F6009F53F4 /* NotificationController.swift in Sources */,
 				5CB10B0025F012F6009F53F4 /* ExtensionDelegate.swift in Sources */,
-				5CB10B4A25F01864009F53F4 /* Caregory-Menu.swift in Sources */,
+				5CB10B4A25F01864009F53F4 /* MessageSelectionView.swift in Sources */,
 				5CB10B0425F012F6009F53F4 /* NotificationView.swift in Sources */,
-				5CB10B3125F01466009F53F4 /* Feedback-Pairing.swift in Sources */,
+				5C565B4B25F111FB00B1C9C0 /* Posts.swift in Sources */,
+				5CF3AA5C25F1278500B13D81 /* PairingFeedbackView.swift in Sources */,
 				5CB10B0625F012F6009F53F4 /* ComplicationController.swift in Sources */,
+				5CA4E95125F138B40065DF3D /* SendFeedbackView.swift in Sources */,
+				5CF3AA7625F12D7800B13D81 /* CategoryFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +491,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Amoro-app WatchKit Extension/Amoro-app WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Amoro-app WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = 88LW56X3Q3;
+				DEVELOPMENT_TEAM = NV6658KLR4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Amoro-app WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -484,7 +516,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Amoro-app WatchKit Extension/Amoro-app WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Amoro-app WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = 88LW56X3Q3;
+				DEVELOPMENT_TEAM = NV6658KLR4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Amoro-app WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -563,7 +595,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 88LW56X3Q3;
+				DEVELOPMENT_TEAM = NV6658KLR4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,7 +616,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 88LW56X3Q3;
+				DEVELOPMENT_TEAM = NV6658KLR4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
