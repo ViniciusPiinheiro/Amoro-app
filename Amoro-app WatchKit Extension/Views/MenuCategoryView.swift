@@ -18,14 +18,21 @@ struct MenuCategoryView: View {
         
         HStack {
             VStack {
-                CategoryFrame(categoryName: cute.text, iconName: cute.image)
-                CategoryFrame(categoryName: poke.text, iconName: poke.image)
+                CategoryFramePurple(categoryName: cute.text, iconName: cute.image)
+                CategoryFramePink(categoryName: poke.text, iconName: poke.image)
             }
             VStack {
-                CategoryFrame(categoryName: hot.text, iconName: hot.image)
-                CategoryFrame(categoryName: comic.text, iconName: comic.image)
+                CategoryFramePink(categoryName: hot.text, iconName: hot.image)
+                CategoryFramePurple(categoryName: comic.text, iconName: comic.image)
             }
         }
+
+        .navigationBarBackButtonHidden(true)
+        .padding(.top, 20)
+        
+
+        
+        
     }
     
 }

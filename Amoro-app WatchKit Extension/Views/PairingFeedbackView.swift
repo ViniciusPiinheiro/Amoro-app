@@ -8,24 +8,31 @@
 import SwiftUI
 
 struct PairingFeedbackView: View {
+    
     var body: some View {
-        VStack {
-            Image("Sample")
-            Text("Você e seu amor")
-                .multilineTextAlignment(.center)
-                .font(.system(size: 17))
-            Text("agora estão")
-                .font(.system(size: 17))
-            Text("conectados")
-                .bold()
-                .font(.system(size: 17))
+        GeometryReader { geometry in
+            if geometry.size.width > 324.0/2.0 {
+                PairingView()
+                    .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
+                    .padding(.leading, 32.0)
+            } else if geometry.size.width > 272.0/2.0 {
+                PairingView()
+                    .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
+                    .padding(.leading, 19.0)
+            }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 
 struct PairingFeedbackView_Previews: PreviewProvider {
     static var previews: some View {
-        PairingFeedbackView()
+        Group {
+            PairingFeedbackView()
+                .previewDevice("Apple Watch Series 5 - 44mm")
+            PairingFeedbackView()
+                .previewDevice("Apple Watch Series 5 - 40mm")
+        }
     }
 }

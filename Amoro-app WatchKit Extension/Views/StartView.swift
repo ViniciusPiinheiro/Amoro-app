@@ -17,11 +17,12 @@ struct StartView: View {
                 Text("Adicione o código do seu amor")
                     .multilineTextAlignment(.leading)
                     .font(.system(size: 30))
-                    
+                
                 Spacer()
                     .frame(height: 12)
-                TextField("Enter your name", text: $name)
-                    
+                NavigationLink(destination: PairingFeedbackView()) {
+                    TextField("Enter your name", text: $name)
+                }
                 Spacer()
                     .frame(height: 12)
                 Divider()
