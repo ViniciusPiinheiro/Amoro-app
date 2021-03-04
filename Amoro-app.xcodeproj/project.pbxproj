@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C17719225F1A58D00BD7DA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C17719125F1A58D00BD7DA0 /* ContentView.swift */; };
 		5C565B4B25F111FB00B1C9C0 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C565B4A25F111FB00B1C9C0 /* Posts.swift */; };
 		5C887B4325F16C7B0032274D /* CategoryFramePurple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887B4225F16C7B0032274D /* CategoryFramePurple.swift */; };
 		5C887B4B25F17BF10032274D /* PairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887B4A25F17BF10032274D /* PairingView.swift */; };
@@ -75,6 +76,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5C17719125F1A58D00BD7DA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C565B4A25F111FB00B1C9C0 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		5C887B4225F16C7B0032274D /* CategoryFramePurple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFramePurple.swift; sourceTree = "<group>"; };
 		5C887B4A25F17BF10032274D /* PairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingView.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				5CA4E95025F138B40065DF3D /* SendFeedbackView.swift */,
 				5C887B4A25F17BF10032274D /* PairingView.swift */,
 				5C887B5525F18A0C0032274D /* SendView.swift */,
+				5C17719125F1A58D00BD7DA0 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				5CB10AFC25F012F6009F53F4 /* HostingController.swift in Sources */,
 				5CB10B0225F012F6009F53F4 /* NotificationController.swift in Sources */,
 				5CB10B0025F012F6009F53F4 /* ExtensionDelegate.swift in Sources */,
+				5C17719225F1A58D00BD7DA0 /* ContentView.swift in Sources */,
 				5CB10B4A25F01864009F53F4 /* MessageSelectionView.swift in Sources */,
 				5CB10B0425F012F6009F53F4 /* NotificationView.swift in Sources */,
 				5C565B4B25F111FB00B1C9C0 /* Posts.swift in Sources */,
