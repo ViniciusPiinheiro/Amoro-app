@@ -507,7 +507,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Amoro-app WatchKit Extension/Amoro-app WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Amoro-app WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = NV6658KLR4;
+				DEVELOPMENT_TEAM = 88LW56X3Q3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Amoro-app WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -532,7 +532,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Amoro-app WatchKit Extension/Amoro-app WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Amoro-app WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = NV6658KLR4;
+				DEVELOPMENT_TEAM = 88LW56X3Q3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Amoro-app WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -558,7 +558,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NV6658KLR4;
+				DEVELOPMENT_TEAM = 88LW56X3Q3;
 				IBSC_MODULE = Amoro_app_WatchKit_Extension;
 				INFOPLIST_FILE = "Amoro-app WatchKit App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -586,7 +586,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NV6658KLR4;
+				DEVELOPMENT_TEAM = 88LW56X3Q3;
 				IBSC_MODULE = Amoro_app_WatchKit_Extension;
 				INFOPLIST_FILE = "Amoro-app WatchKit App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -611,7 +611,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NV6658KLR4;
+				DEVELOPMENT_TEAM = 88LW56X3Q3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -632,7 +632,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NV6658KLR4;
+				DEVELOPMENT_TEAM = 88LW56X3Q3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -10,7 +10,12 @@ import SwiftUI
 import UserNotifications
 
 class NotificationController: WKUserNotificationHostingController<NotificationView> {
-
+     
+    @IBOutlet var titleLabel: WKInterfaceLabel!
+    @IBOutlet var iconeImage: WKInterfaceImage!
+    @IBOutlet var bodyLabel: WKInterfaceLabel!
+    
+    
     override var body: NotificationView {
         return NotificationView()
     }
@@ -29,5 +34,6 @@ class NotificationController: WKUserNotificationHostingController<NotificationVi
         // This method is called when a notification needs to be presented.
         // Implement it if you use a dynamic notification interface.
         // Populate your dynamic notification interface as quickly as possible.
+      
     }
 }

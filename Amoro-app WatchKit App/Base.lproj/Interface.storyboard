@@ -1,42 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14815" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NBu-mt-KyX">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NBu-mt-KyX">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14770"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14621"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
     </dependencies>
     <scenes>
         <!--Hosting Controller-->
         <scene sceneID="RUd-og-cv4">
             <objects>
-                <hostingController id="NBu-mt-KyX" customClass="HostingController" 
-                customModuleProvider="target"/>                
+                <hostingController id="NBu-mt-KyX" customClass="HostingController" customModule="Amoro_app_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="187" y="141"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <notificationController id="YCC-NB-fut" customClass="NotificationController" customModule="Amoro_app_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                        <segue destination="E1v-xG-9mf" kind="relationship" relationship="dynamicNotificationInterface" id="fx2-DY-sTU"/>
                     </connections>
                 </notificationController>
             </objects>
             <point key="canvasLocation" x="187" y="462"/>
         </scene>
-        <!--Notification Hosting Controller-->
-        <scene sceneID="Niz-AI-uX2">
+        <!--Notification Controller-->
+        <scene sceneID="GED-mn-Y17">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController"
-                customModuleProvider="target"/>
+                <controller id="E1v-xG-9mf" customClass="NotificationController" customModule="Amoro_app_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="bottom" text="Label" id="dlh-eD-f6r"/>
+                        <label alignment="center" verticalAlignment="bottom" text="Label" textAlignment="left" baselineAdjustment="alignCenters" id="tky-t1-Zzi"/>
+                        <imageView alignment="center" verticalAlignment="center" image="Sample" contentMode="scaleAspectFit" id="lV1-V6-D6K"/>
+                    </items>
+                    <connections>
+                        <outlet property="bodyLabel" destination="dlh-eD-f6r" id="WtF-GR-qb2"/>
+                        <outlet property="iconeImage" destination="lV1-V6-D6K" id="kIg-Sa-yNH"/>
+                        <outlet property="titleLabel" destination="tky-t1-Zzi" id="yvW-cM-BDe"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="488" y="462"/>
+            <point key="canvasLocation" x="487" y="462"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Sample" width="80" height="80"/>
+    </resources>
 </document>
