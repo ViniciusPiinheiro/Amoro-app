@@ -11,20 +11,21 @@ struct MessageSelectionView: View {
     var categorySelected = [Posts]()
     var body: some View {
         List(categorySelected) { (post) in
-            NavigationLink(destination: ContentView()) {
+            NavigationLink(destination: ContentView(messageImage: "Sample", messageText: post.text)) {
                 HStack {
                     Circle()
                         .frame(width: 20, height: 20)
                         .foregroundColor((post.id  % 2 == 0) ? Color(.red) : Color(.purple))
-                        .listRowBackground((post.id  % 2 == 0) ? Color(.red) : Color(.purple))
+                        .listRowBackground((post.id  % 2 == 0) ? (Color.red) : (Color.purple))
                     Text(post.text)
                         .foregroundColor((post.id  % 2 == 0) ? Color(.white) : Color(.purple))
+                        .listRowBackground((post.id  % 2 == 0) ? (Color.red) : (Color.purple))
                 }
             }
-            
         }
         
     }
+    
 }
 
 struct MessageSelectionView_Previews: PreviewProvider {

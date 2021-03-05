@@ -185,10 +185,10 @@
 				5C887B4225F16C7B0032274D /* CategoryFramePurple.swift */,
 				5CF3AA6625F128AC00B13D81 /* MenuCategoryView.swift */,
 				5CB10B4925F01864009F53F4 /* MessageSelectionView.swift */,
+				5C17719125F1A58D00BD7DA0 /* ContentView.swift */,
 				5CA4E95025F138B40065DF3D /* SendFeedbackView.swift */,
 				5C887B4A25F17BF10032274D /* PairingView.swift */,
 				5C887B5525F18A0C0032274D /* SendView.swift */,
-				5C17719125F1A58D00BD7DA0 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
