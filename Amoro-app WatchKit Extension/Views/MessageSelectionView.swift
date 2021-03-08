@@ -10,20 +10,18 @@ import SwiftUI
 struct MessageSelectionView: View {
     var categorySelected = [Posts]()
     var body: some View {
-        List(categorySelected) { (post) in
-            NavigationLink(destination: ContentView(messageImage: "Sample", messageText: post.text)) {
-                HStack {
-                    Circle()
-                        .frame(width: 20, height: 20)
-                        .foregroundColor((post.id  % 2 == 0) ? Color(.red) : Color(.purple))
-                        .listRowBackground((post.id  % 2 == 0) ? (Color.red) : (Color.purple))
-                    Text(post.text)
-                        .foregroundColor((post.id  % 2 == 0) ? Color(.white) : Color(.purple))
-                        .listRowBackground((post.id  % 2 == 0) ? (Color.red) : (Color.purple))
+        ScrollView {
+            VStack {
+                ForEach(0..<categorySelected.count) { i in
+                    NavigationLink(destination: ContentView(messageImage: "Sample", messageText: categorySelected[i].text)) {
+                        rowListView(colorRow: categorySelected[i].id, text: categorySelected[i].text)
+                    }
                 }
             }
+            
         }
         
+        .navigationTitle(categorySelected[0].title)
     }
     
 }

@@ -11,54 +11,56 @@ import SwiftUI
 class Posts: Identifiable {
     var id: Int
     var text:String
-    init(id:Int, text:String) {
+    var title:String
+    init(title:String? = nil, id:Int, text:String) {
+        self.title = title ?? ""
         self.id = id
         self.text = text
     }
     
     
     static let cute = [
-        Posts(id: 1, text: "Eu te amo, bebê"),
-        Posts(id: 2, text: "Você é meu neném"),
-        Posts(id: 3, text: "Tô pensando em você"),
-        Posts(id: 4, text: "Tô com saudades"),
-        Posts(id: 5, text: "Você alegra meu coração"),
-        Posts(id: 6, text: "Você é muito importante"),
-        Posts(id: 7, text: "Ohayou"),
-        Posts(id: 8, text: "Ohayou")
+        Posts(title: "Fofas", id: 0, text: "Eu te amo, bebê"),
+        Posts(id: 1, text: "Você é meu neném"),
+        Posts(id: 2, text: "Tô pensando em você"),
+        Posts(id: 3, text: "Tô com saudades"),
+        Posts(id: 4, text: "Você alegra meu coração"),
+        Posts(id: 5, text: "Você é muito importante"),
+        Posts(id: 6, text: "Ohayou"),
+        Posts(id: 7, text: "Ohayou")
     ]
     
     static let comic = [
-        Posts(id: 1, text: "Se você abrir a boca sai miau"),
-        Posts(id: 2, text: "Você é meu neném"),
-        Posts(id: 3, text: "Tô pensando em você"),
-        Posts(id: 4, text: "Tô com saudades"),
-        Posts(id: 5, text: "Você alegra meu coração"),
-        Posts(id: 6, text: "Você é muito importante"),
-        Posts(id: 7, text: "Ohayou"),
-        Posts(id: 8, text: "Ohayou")
+        Posts(title: "Cômicas", id: 0, text: "Se você abrir a boca sai miau"),
+        Posts(id: 1, text: "Você é meu neném"),
+        Posts(id: 2, text: "Tô pensando em você"),
+        Posts(id: 3, text: "Tô com saudades"),
+        Posts(id: 4, text: "Você alegra meu coração"),
+        Posts(id: 5, text: "Você é muito importante"),
+        Posts(id: 6, text: "Ohayou"),
+        Posts(id: 7, text: "Ohayou")
     ]
     
     static let poke = [
-        Posts(id: 1, text: "Vamos nos ver?"),
-        Posts(id: 2, text: "Vamos comer?"),
-        Posts(id: 3, text: "Deixa eu cuidar de ti"),
-        Posts(id: 4, text: "Tô com saudades"),
-        Posts(id: 5, text: "Você alegra meu coração"),
-        Posts(id: 6, text: "Você é muito importante"),
-        Posts(id: 7, text: "Ohayou"),
-        Posts(id: 8, text: "Ohayou")
+        Posts(title: "Pedidos", id: 0, text: "Vamos nos ver?"),
+        Posts(id: 1, text: "Vamos comer?"),
+        Posts(id: 2, text: "Deixa eu cuidar de ti"),
+        Posts(id: 3, text: "Tô com saudades"),
+        Posts(id: 4, text: "Você alegra meu coração"),
+        Posts(id: 5, text: "Você é muito importante"),
+        Posts(id: 6, text: "Ohayou"),
+        Posts(id: 7, text: "Ohayou")
     ]
     
     static let hot = [
-        Posts(id: 1, text: "Vamos ali testar um negócio?"),
-        Posts(id: 2, text: "Ei, psiu..."),
-        Posts(id: 3, text: "Vamos perder o juízo juntos"),
-        Posts(id: 4, text: "Tô com saudades"),
-        Posts(id: 5, text: "Você alegra meu coração"),
-        Posts(id: 6, text: "Você é muito importante"),
-        Posts(id: 7, text: "Ohayou"),
-        Posts(id: 8, text: "Ohayou")
+        Posts(title: "Ousadas", id: 0, text: "Vamos ali testar um negócio?"),
+        Posts(id: 1, text: "Ei, psiu..."),
+        Posts(id: 2, text: "Vamos perder o juízo juntos"),
+        Posts(id: 3, text: "Tô com saudades"),
+        Posts(id: 4, text: "Você alegra meu coração"),
+        Posts(id: 5, text: "Você é muito importante"),
+        Posts(id: 6, text: "Ohayou"),
+        Posts(id: 7, text: "Ohayou")
     ]
     
 }

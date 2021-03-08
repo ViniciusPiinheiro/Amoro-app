@@ -14,7 +14,7 @@ struct ContentView: View {
     @State var messageImage:String
     var messageText: String
     @State private var iconNumber = 1
-    @State private var icons = ["Sample", "Icon"]
+    @State private var icons = ["Sample", "beatIcon", "cuteIcon", "funnyIcon", "hotIcon"]
     
     var body: some View {
         ScrollView {
@@ -59,7 +59,7 @@ struct ContentView: View {
                 ZStack {
                     RoundedRectangle(cornerRadius: 12)
                         .frame(width: 164, height: 64, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color("Box Label"))
                     Text(messageText)
                         .padding()
                 }
@@ -69,15 +69,15 @@ struct ContentView: View {
                     .frame(height: 12)
                 NavigationLink(destination: SendFeedbackView()) {
                     Text("Enviar")
-                        .foregroundColor(.purple)
+                        .foregroundColor(Color("Primary Text - Dark"))
                 }
-                .background(Color.pink)
+                .background(Color("Title | Primary Button"))
                 .cornerRadius(15)
                 .padding(.trailing, 60)
                 .padding(.leading, 60)
             }
         }
-        
+        .navigationTitle("Mensagem")
     }
 }
 

@@ -1,12 +1,5 @@
 //
-//  CategoryFrame.swift
-//  Amoro-app WatchKit Extension
-//
-//  Created by Vinícius Pinheiro on 04/03/21.
-//
-
-//
-//  CategoryFrame.swift
+//  CategoryFramePurple.swift
 //  Amoro-app WatchKit Extension
 //
 //  Created by Vinícius Pinheiro on 04/03/21.
@@ -14,8 +7,7 @@
 
 import SwiftUI
 
-struct CategoryFramePink: View {
-    
+struct CategoryFramePurple: View {
     let categoryName:String
     let iconName:String
     
@@ -25,27 +17,22 @@ struct CategoryFramePink: View {
             VStack {
                 Text(categoryName)
                     .font(.system(size: 16, weight: .bold, design: .rounded))
-                    .foregroundColor(.purple)
+                    .foregroundColor(.white)
                     .padding(.trailing, 24)
                 Image(iconName)
                     .resizable()
                     .frame(width: 40, height: 35, alignment: .center)
-                    .cornerRadius(25)
                     .padding(.leading, 20)
             }
             .frame(width: 75, height: 75)
-            .background(Color.pink)
+            .background(Color("Button 1"))
             .cornerRadius(12)
         }
     }
 }
 
-
-struct CategoryFramePink_Previews: PreviewProvider {
+struct CategoryFramePurple_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryFramePink(categoryName: "Test", iconName: "Sample")
+        CategoryFramePurple(categoryName: "Test", iconName: "Sample")
     }
 }
-
-
-

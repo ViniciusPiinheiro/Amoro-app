@@ -12,6 +12,20 @@
 		5C7E311F25F6903200D545DD /* SFCompactRounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E311E25F6903200D545DD /* SFCompactRounded.ttf */; };
 		5C7E312025F6903200D545DD /* SFCompactRounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E311E25F6903200D545DD /* SFCompactRounded.ttf */; };
 		5C7E312125F6903200D545DD /* SFCompactRounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E311E25F6903200D545DD /* SFCompactRounded.ttf */; };
+		5C7E312625F6A23600D545DD /* SF-Compact-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E312525F6A23600D545DD /* SF-Compact-Rounded-Bold.otf */; };
+		5C7E312725F6A23600D545DD /* SF-Compact-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E312525F6A23600D545DD /* SF-Compact-Rounded-Bold.otf */; };
+		5C7E312825F6A23600D545DD /* SF-Compact-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E312525F6A23600D545DD /* SF-Compact-Rounded-Bold.otf */; };
+		5C7E312D25F6A24200D545DD /* SF-Compact-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E312C25F6A24200D545DD /* SF-Compact-Rounded-Semibold.otf */; };
+		5C7E312E25F6A24200D545DD /* SF-Compact-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E312C25F6A24200D545DD /* SF-Compact-Rounded-Semibold.otf */; };
+		5C7E312F25F6A24200D545DD /* SF-Compact-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E312C25F6A24200D545DD /* SF-Compact-Rounded-Semibold.otf */; };
+		5C7E313425F6A24C00D545DD /* SF-Compact-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E313325F6A24C00D545DD /* SF-Compact-Rounded-Medium.otf */; };
+		5C7E313525F6A24C00D545DD /* SF-Compact-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E313325F6A24C00D545DD /* SF-Compact-Rounded-Medium.otf */; };
+		5C7E313625F6A24C00D545DD /* SF-Compact-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E313325F6A24C00D545DD /* SF-Compact-Rounded-Medium.otf */; };
+		5C7E313B25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E313A25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf */; };
+		5C7E313C25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E313A25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf */; };
+		5C7E313D25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E313A25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf */; };
+		5C7E314225F6AE9C00D545DD /* rowListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E314125F6AE9C00D545DD /* rowListView.swift */; };
+		5C7E314725F6B87800D545DD /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E314625F6B87800D545DD /* ButtonView.swift */; };
 		5C887B4325F16C7B0032274D /* CategoryFramePurple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887B4225F16C7B0032274D /* CategoryFramePurple.swift */; };
 		5C887B4B25F17BF10032274D /* PairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887B4A25F17BF10032274D /* PairingView.swift */; };
 		5C887B5625F18A0C0032274D /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887B5525F18A0C0032274D /* SendView.swift */; };
@@ -84,6 +98,12 @@
 		5C17719125F1A58D00BD7DA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C565B4A25F111FB00B1C9C0 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		5C7E311E25F6903200D545DD /* SFCompactRounded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFCompactRounded.ttf; sourceTree = "<group>"; };
+		5C7E312525F6A23600D545DD /* SF-Compact-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		5C7E312C25F6A24200D545DD /* SF-Compact-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Semibold.otf"; sourceTree = "<group>"; };
+		5C7E313325F6A24C00D545DD /* SF-Compact-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		5C7E313A25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SF-Compact-Rounded-Medium.ttf"; sourceTree = "<group>"; };
+		5C7E314125F6AE9C00D545DD /* rowListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rowListView.swift; sourceTree = "<group>"; };
+		5C7E314625F6B87800D545DD /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		5C887B4225F16C7B0032274D /* CategoryFramePurple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFramePurple.swift; sourceTree = "<group>"; };
 		5C887B4A25F17BF10032274D /* PairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingView.swift; sourceTree = "<group>"; };
 		5C887B5525F18A0C0032274D /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
@@ -130,9 +150,42 @@
 		5C7E311D25F6901700D545DD /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				5C7E313A25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf */,
+				5C7E313325F6A24C00D545DD /* SF-Compact-Rounded-Medium.otf */,
+				5C7E312C25F6A24200D545DD /* SF-Compact-Rounded-Semibold.otf */,
+				5C7E312525F6A23600D545DD /* SF-Compact-Rounded-Bold.otf */,
 				5C7E311E25F6903200D545DD /* SFCompactRounded.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		5C7E314E25F6BCDA00D545DD /* SendViews */ = {
+			isa = PBXGroup;
+			children = (
+				5CA4E95025F138B40065DF3D /* SendFeedbackView.swift */,
+				5C887B5525F18A0C0032274D /* SendView.swift */,
+				5C7E314625F6B87800D545DD /* ButtonView.swift */,
+			);
+			path = SendViews;
+			sourceTree = "<group>";
+		};
+		5C7E314F25F6BCF300D545DD /* MenuCategoryViews */ = {
+			isa = PBXGroup;
+			children = (
+				5C887B4225F16C7B0032274D /* CategoryFramePurple.swift */,
+				5CF3AA7525F12D7800B13D81 /* CategoryFramePink.swift */,
+				5CF3AA6625F128AC00B13D81 /* MenuCategoryView.swift */,
+			);
+			path = MenuCategoryViews;
+			sourceTree = "<group>";
+		};
+		5C7E315025F6BD1400D545DD /* PairingViews */ = {
+			isa = PBXGroup;
+			children = (
+				5C887B4A25F17BF10032274D /* PairingView.swift */,
+				5CF3AA5B25F1278500B13D81 /* PairingFeedbackView.swift */,
+			);
+			path = PairingViews;
 			sourceTree = "<group>";
 		};
 		5CB10ADC25F012F4009F53F4 = {
@@ -196,16 +249,13 @@
 		5CF3AA5725F1273200B13D81 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5C7E315025F6BD1400D545DD /* PairingViews */,
+				5C7E314F25F6BCF300D545DD /* MenuCategoryViews */,
+				5C7E314E25F6BCDA00D545DD /* SendViews */,
 				5CB10AFD25F012F6009F53F4 /* StartView.swift */,
-				5CF3AA5B25F1278500B13D81 /* PairingFeedbackView.swift */,
-				5CF3AA7525F12D7800B13D81 /* CategoryFramePink.swift */,
-				5C887B4225F16C7B0032274D /* CategoryFramePurple.swift */,
-				5CF3AA6625F128AC00B13D81 /* MenuCategoryView.swift */,
 				5CB10B4925F01864009F53F4 /* MessageSelectionView.swift */,
 				5C17719125F1A58D00BD7DA0 /* ContentView.swift */,
-				5CA4E95025F138B40065DF3D /* SendFeedbackView.swift */,
-				5C887B4A25F17BF10032274D /* PairingView.swift */,
-				5C887B5525F18A0C0032274D /* SendView.swift */,
+				5C7E314125F6AE9C00D545DD /* rowListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,7 +380,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7E312D25F6A24200D545DD /* SF-Compact-Rounded-Semibold.otf in Resources */,
+				5C7E313B25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf in Resources */,
+				5C7E313425F6A24C00D545DD /* SF-Compact-Rounded-Medium.otf in Resources */,
 				5C7E311F25F6903200D545DD /* SFCompactRounded.ttf in Resources */,
+				5C7E312625F6A23600D545DD /* SF-Compact-Rounded-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +394,11 @@
 			files = (
 				5CB10AF025F012F5009F53F4 /* Assets.xcassets in Resources */,
 				5CB10AEE25F012F4009F53F4 /* Interface.storyboard in Resources */,
+				5C7E312E25F6A24200D545DD /* SF-Compact-Rounded-Semibold.otf in Resources */,
+				5C7E313525F6A24C00D545DD /* SF-Compact-Rounded-Medium.otf in Resources */,
 				5C7E312025F6903200D545DD /* SFCompactRounded.ttf in Resources */,
+				5C7E312725F6A23600D545DD /* SF-Compact-Rounded-Bold.otf in Resources */,
+				5C7E313C25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +408,11 @@
 			files = (
 				5CB10B0B25F012F6009F53F4 /* Preview Assets.xcassets in Resources */,
 				5CB10B0825F012F6009F53F4 /* Assets.xcassets in Resources */,
+				5C7E312F25F6A24200D545DD /* SF-Compact-Rounded-Semibold.otf in Resources */,
+				5C7E313625F6A24C00D545DD /* SF-Compact-Rounded-Medium.otf in Resources */,
 				5C7E312125F6903200D545DD /* SFCompactRounded.ttf in Resources */,
+				5C7E312825F6A23600D545DD /* SF-Compact-Rounded-Bold.otf in Resources */,
+				5C7E313D25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +434,7 @@
 				5C17719225F1A58D00BD7DA0 /* ContentView.swift in Sources */,
 				5CB10B4A25F01864009F53F4 /* MessageSelectionView.swift in Sources */,
 				5CB10B0425F012F6009F53F4 /* NotificationView.swift in Sources */,
+				5C7E314225F6AE9C00D545DD /* rowListView.swift in Sources */,
 				5C565B4B25F111FB00B1C9C0 /* Posts.swift in Sources */,
 				5CF3AA5C25F1278500B13D81 /* PairingFeedbackView.swift in Sources */,
 				5CB10B0625F012F6009F53F4 /* ComplicationController.swift in Sources */,
@@ -380,6 +443,7 @@
 				5C887B5625F18A0C0032274D /* SendView.swift in Sources */,
 				5CAF628025F675AC002142B6 /* CoupleRoom.swift in Sources */,
 				5CF3AA7625F12D7800B13D81 /* CategoryFramePink.swift in Sources */,
+				5C7E314725F6B87800D545DD /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
