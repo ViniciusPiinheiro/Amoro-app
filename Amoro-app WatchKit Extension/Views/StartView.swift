@@ -34,10 +34,26 @@ struct StartView: View {
                         .bold()
                 }
             }
+            .onAppear(perform: {
+                var room = 0
+                let randomNumber = Int.random(in: 1...10000)
+                room = randomNumber
+                let coupleRoom = CoupleRoom(roomNumber: room)
+                coupleRoom.createRecord { (error) in
+                    if error != nil {
+                        print("Não foi")
+                    } else {
+                        print("foi")
+    
+                    }
+                }
+            })
             
             
         }
-    }}
+    }
+    
+}
 
 struct StartView_Previews: PreviewProvider {
     static var previews: some View {
