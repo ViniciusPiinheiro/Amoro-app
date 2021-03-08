@@ -10,13 +10,15 @@ import SwiftUI
 struct StartView: View {
     
     @State private var name: String = "0000"
+    @State private var room = 0
     
     var body: some View {
         ScrollView {
             VStack {
                 Text("Adicione o código do seu amor")
                     .multilineTextAlignment(.leading)
-                    .font(.system(size: 30))
+                    .font(.custom("SFCompactRounded", size: 35))
+                    
                 
                 Spacer()
                     .frame(height: 12)
@@ -30,12 +32,11 @@ struct StartView: View {
                     .frame(height: 12)
                 HStack {
                     Text("Seu código é")
-                    Text("00000")
+                    Text(String(room))
                         .bold()
                 }
             }
             .onAppear(perform: {
-                var room = 0
                 let randomNumber = Int.random(in: 1...10000)
                 room = randomNumber
                 let coupleRoom = CoupleRoom(roomNumber: room)

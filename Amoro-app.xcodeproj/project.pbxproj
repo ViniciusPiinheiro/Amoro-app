@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5C17719225F1A58D00BD7DA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C17719125F1A58D00BD7DA0 /* ContentView.swift */; };
 		5C565B4B25F111FB00B1C9C0 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C565B4A25F111FB00B1C9C0 /* Posts.swift */; };
+		5C7E311F25F6903200D545DD /* SFCompactRounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E311E25F6903200D545DD /* SFCompactRounded.ttf */; };
+		5C7E312025F6903200D545DD /* SFCompactRounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E311E25F6903200D545DD /* SFCompactRounded.ttf */; };
+		5C7E312125F6903200D545DD /* SFCompactRounded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E311E25F6903200D545DD /* SFCompactRounded.ttf */; };
 		5C887B4325F16C7B0032274D /* CategoryFramePurple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887B4225F16C7B0032274D /* CategoryFramePurple.swift */; };
 		5C887B4B25F17BF10032274D /* PairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887B4A25F17BF10032274D /* PairingView.swift */; };
 		5C887B5625F18A0C0032274D /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887B5525F18A0C0032274D /* SendView.swift */; };
@@ -80,6 +83,7 @@
 /* Begin PBXFileReference section */
 		5C17719125F1A58D00BD7DA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5C565B4A25F111FB00B1C9C0 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		5C7E311E25F6903200D545DD /* SFCompactRounded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFCompactRounded.ttf; sourceTree = "<group>"; };
 		5C887B4225F16C7B0032274D /* CategoryFramePurple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFramePurple.swift; sourceTree = "<group>"; };
 		5C887B4A25F17BF10032274D /* PairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingView.swift; sourceTree = "<group>"; };
 		5C887B5525F18A0C0032274D /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
@@ -123,6 +127,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C7E311D25F6901700D545DD /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5C7E311E25F6903200D545DD /* SFCompactRounded.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		5CB10ADC25F012F4009F53F4 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +173,7 @@
 				5CF3AA5725F1273200B13D81 /* Views */,
 				5CF3AA7425F12D3A00B13D81 /* Data */,
 				5CB10AFF25F012F6009F53F4 /* ExtensionDelegate.swift */,
+				5C7E311D25F6901700D545DD /* Font */,
 				5CB10B0125F012F6009F53F4 /* NotificationController.swift */,
 				5CB10B0325F012F6009F53F4 /* NotificationView.swift */,
 				5CB10B0525F012F6009F53F4 /* ComplicationController.swift */,
@@ -317,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7E311F25F6903200D545DD /* SFCompactRounded.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +340,7 @@
 			files = (
 				5CB10AF025F012F5009F53F4 /* Assets.xcassets in Resources */,
 				5CB10AEE25F012F4009F53F4 /* Interface.storyboard in Resources */,
+				5C7E312025F6903200D545DD /* SFCompactRounded.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +350,7 @@
 			files = (
 				5CB10B0B25F012F6009F53F4 /* Preview Assets.xcassets in Resources */,
 				5CB10B0825F012F6009F53F4 /* Assets.xcassets in Resources */,
+				5C7E312125F6903200D545DD /* SFCompactRounded.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

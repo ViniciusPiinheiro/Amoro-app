@@ -9,23 +9,19 @@ import SwiftUI
 
 struct SendFeedbackView: View {
     var body: some View {
-        VStack {
-            Image("Sample")
-            Text("Sua Mensagem")
-                .multilineTextAlignment(.center)
-                .font(.system(size: 17))
-            HStack {
-                Text("enviada")
-                    .bold()
-                    .font(.system(size: 17))
-                Text("para o seu")
-                    .font(.system(size: 17))
+        GeometryReader { geometry in
+            if geometry.size.width > 324.0/2.0 {
+                SendView()
+                    .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
+                    .padding(.leading, 18.0)
+            } else if geometry.size.width > 272.0/2.0 {
+                SendView()
+                    .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
+                    .padding(.leading, 18.0)
             }
-            Text("amor")
-                .font(.system(size: 17))
         }
+        .navigationBarBackButtonHidden(true)
     }
-    
 }
 
 struct SendFeedbackView_Previews: PreviewProvider {

@@ -12,7 +12,7 @@ struct SendView: View {
         GeometryReader { proxy in
             if proxy.size.width > 324/2.0 { // 40mm watch resolution in points
                 VStack {
-                    Image("Sample")
+                    Image("sendedIcon")
                     Text("Sua Mensagem")
                         .multilineTextAlignment(.center)
                         .font(.system(size: 17))
@@ -35,7 +35,7 @@ struct SendView: View {
             } else {
                 ScrollView {
                     VStack {
-                        Image("Sample")
+                        Image("sendedIcon")
                         Text("Sua Mensagem")
                             .multilineTextAlignment(.center)
                             .font(.system(size: 17))

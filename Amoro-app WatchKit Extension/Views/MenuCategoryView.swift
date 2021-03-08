@@ -10,8 +10,8 @@ import SwiftUI
 struct MenuCategoryView: View {
     
     let cute = Categories.cuteOption
-    let comic = Categories.comicOption
-    let poke = Categories.pokeOption
+    let funny = Categories.funnyOption
+    let beat = Categories.beatIcon
     let hot = Categories.hotOption
     
     var body: some View {
@@ -23,7 +23,7 @@ struct MenuCategoryView: View {
                 }
                 .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 NavigationLink(destination: MessageSelectionView(categorySelected: Posts.poke)) {
-                    CategoryFramePink(categoryName: poke.text, iconName: poke.image)
+                    CategoryFramePink(categoryName: beat.text, iconName: beat.image)
                 }
                 .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             }
@@ -33,7 +33,7 @@ struct MenuCategoryView: View {
                 }
                 .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 NavigationLink(destination: MessageSelectionView(categorySelected: Posts.comic)) {
-                    CategoryFramePurple(categoryName: comic.text, iconName: comic.image)
+                    CategoryFramePurple(categoryName: funny.text, iconName: funny.image)
                 }
                 .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             }
