@@ -22,9 +22,12 @@ struct StartView: View {
                 
                 Spacer()
                     .frame(height: 12)
-                NavigationLink(destination: PairingFeedbackView()) {
+                NavigationLink(destination: PairingView()) {
                     TextField("Enter your name", text: $name)
+                        .padding()
                 }
+                .buttonStyle(PlainButtonStyle())
+
                 Spacer()
                     .frame(height: 12)
                 Divider()

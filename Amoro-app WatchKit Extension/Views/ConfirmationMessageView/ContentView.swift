@@ -77,7 +77,7 @@ struct ContentView: View {
                 .padding(.leading, 60)
                 Spacer()
                     .frame(height: 12)
-                NavigationLink(destination: SendFeedbackView()) {
+                NavigationLink(destination: SendView()) {
                     Text("Enviar")
                         .foregroundColor(Color("Primary Text - Dark"))
                 }

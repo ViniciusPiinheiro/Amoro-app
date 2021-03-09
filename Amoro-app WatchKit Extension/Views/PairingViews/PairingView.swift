@@ -30,6 +30,7 @@ struct PairingView: View {
                     .cornerRadius(15)
                     .padding(.trailing, 16)
                     .padding(.leading, 16)
+                    
                 }
                 
             } else {
