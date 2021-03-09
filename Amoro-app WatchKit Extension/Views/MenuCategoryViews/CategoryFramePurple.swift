@@ -16,7 +16,7 @@ struct CategoryFramePurple: View {
         ZStack {
             VStack {
                 Text(categoryName)
-                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                    .font(.custom("SF Compact Rounded Semibold", size: 16))
                     .foregroundColor(.white)
                     .padding(.trailing, categoryName == "Funny" ? 10 : 24)
                 Image(iconName)

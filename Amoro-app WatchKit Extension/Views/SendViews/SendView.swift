@@ -15,18 +15,18 @@ struct SendView: View {
                     Image("sendedIcon")
                     Text("Sua Mensagem")
                         .multilineTextAlignment(.center)
-                        .font(.system(size: 17))
+                        .font(.custom("SF Compact Rounded Regular", size: 17))
                     HStack {
                         Text("enviada")
-                            .bold()
-                            .font(.system(size: 17))
+                            .font(.custom("SF Compact Rounded Bold", size: 17))
                         Text("para o seu")
-                            .font(.system(size: 17))
+                            .font(.custom("SF Compact Rounded Regular", size: 17))
                     }
                     Text("amor")
-                        .font(.system(size: 17))
+                        .font(.custom("SF Compact Rounded Regular", size: 17))
                     NavigationLink(destination: MenuCategoryView()) {
                         Text("Fechar")
+                            .font(.custom("SF Compact Rounded Regular", size: 17))
                             
                     }
                     .background(Color("Secundary Button"))

@@ -17,7 +17,7 @@ struct StartView: View {
             VStack {
                 Text("Adicione o código do seu amor")
                     .multilineTextAlignment(.leading)
-                    .font(.custom("FontsFree-Net-SF-Compact-Rounded-Medium", size: 30))
+                    .font(.custom("SF Compact Rounded Medium", size: 30))
                     
                 
                 Spacer()
@@ -35,11 +35,10 @@ struct StartView: View {
                     .frame(height: 12)
                 HStack {
                     Text("Seu código é")
-                        .font(.custom("SFCompactRounded", size: 14))
+                        .font(.custom("SF Compact Rounded Regular", size: 14))
                         .foregroundColor(Color("Tertiary Text"))
                     Text(String(room))
-                        //.font(.custom("SF-Compact-Rounded-Bold", size: 14))
-                        .bold()
+                        .font(.custom("SF Compact Rounded Bold", size: 14))
                 }
             }
             .onAppear(perform: {

@@ -24,7 +24,7 @@ struct CategoryFramePink: View {
         ZStack {
             VStack {
                 Text(categoryName)
-                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                    .font(.custom("SF Compact Rounded Semibold", size: 16))
                     .foregroundColor(.purple)
                     .padding(.trailing, categoryName == "Hot" ? 30 : 24)
                 Image(iconName)

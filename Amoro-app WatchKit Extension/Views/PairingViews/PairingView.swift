@@ -16,12 +16,11 @@ struct PairingView: View {
                         .padding(.top)
                     Text("Você e seu amor")
                         .multilineTextAlignment(.center)
-                        .font(.system(size: 17))
+                        .font(.custom("SF Compact Rounded Regular", size: 17))
                     Text("agora estão")
-                        .font(.system(size: 17))
+                        .font(.custom("SF Compact Rounded Regular", size: 17))
                     Text("conectados")
-                        .bold()
-                        .font(.system(size: 17))
+                        .font(.custom("SF Compact Rounded Bold", size: 17))
                     NavigationLink(destination: MenuCategoryView()) {
                         Text("Fechar")
                             
@@ -40,14 +39,14 @@ struct PairingView: View {
                             .padding(.top)
                         Text("Você e seu amor")
                             .multilineTextAlignment(.center)
-                            .font(.system(size: 17))
+                            .font(.custom("SF Compact Rounded Regular", size: 17))
                         Text("agora estão")
-                            .font(.system(size: 17))
+                            .font(.custom("SF Compact Rounded Regular", size: 17))
                         Text("conectados")
-                            .bold()
-                            .font(.system(size: 17))
+                            .font(.custom("SF Compact Rounded Bold", size: 17))
                         NavigationLink(destination: MenuCategoryView()) {
                             Text("Fechar")
+                                .font(.custom("SF Compact Rounded Regular", size: 17))
                                 
                         }
                         .background(Color("Secundary Button"))
