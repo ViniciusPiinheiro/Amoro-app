@@ -26,12 +26,12 @@ struct rowListView: View {
                     .padding(.trailing, 6)
                 //Spacer()
                 Text(text)
-                    .font(.custom("SFCompactRounded", size: 16))
+                    .font(.custom("SFCompactRounded", size: 15))
                     .foregroundColor((colorRow % 2 == 0) ? Color("Primary Text - Dark") : Color(.white))
                     .multilineTextAlignment(.leading)
                     .listRowBackground((colorRow  % 2 == 0) ? (Color.red) : (Color.purple))
                     //.padding(.all, 5)
-                    .padding(.trailing, 20)
+                    .padding(.trailing, 4)
                 Spacer()
             }
         }

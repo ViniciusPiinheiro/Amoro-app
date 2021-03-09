@@ -187,6 +187,15 @@
 			path = ConfirmationMessageView;
 			sourceTree = "<group>";
 		};
+		5C8C283D25F7EB5E00336DA1 /* MessageSelectionView */ = {
+			isa = PBXGroup;
+			children = (
+				5CB10B4925F01864009F53F4 /* MessageSelectionView.swift */,
+				5C7E314125F6AE9C00D545DD /* rowListView.swift */,
+			);
+			path = MessageSelectionView;
+			sourceTree = "<group>";
+		};
 		5CB10ADC25F012F4009F53F4 = {
 			isa = PBXGroup;
 			children = (
@@ -253,8 +262,7 @@
 				5C7E314E25F6BCDA00D545DD /* SendViews */,
 				5C8C282A25F7D05600336DA1 /* ConfirmationMessageView */,
 				5CB10AFD25F012F6009F53F4 /* StartView.swift */,
-				5CB10B4925F01864009F53F4 /* MessageSelectionView.swift */,
-				5C7E314125F6AE9C00D545DD /* rowListView.swift */,
+				5C8C283D25F7EB5E00336DA1 /* MessageSelectionView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
