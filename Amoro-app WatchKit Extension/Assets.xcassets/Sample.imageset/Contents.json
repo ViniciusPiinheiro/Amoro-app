@@ -1,17 +1,9 @@
 {
   "images" : [
     {
-      "filename" : "Sample.pdf",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
+      "filename" : "DoneConnection.pdf",
+      "idiom" : "watch",
       "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
     }
   ],
   "info" : {

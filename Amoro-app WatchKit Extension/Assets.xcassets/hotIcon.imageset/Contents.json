@@ -1,17 +1,9 @@
 {
   "images" : [
     {
-      "filename" : "hotIcon.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
+      "filename" : "CardThirstyIcon.pdf",
+      "idiom" : "watch",
       "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
     }
   ],
   "info" : {
