@@ -22,13 +22,17 @@ struct rowListView: View {
                 Circle()
                     .frame(width: 20, height: 20)
                     .foregroundColor((colorRow % 2 == 0) ? Color("Primary Text - Dark") : Color("Button 2"))
-                    .padding(.leading, 18)
-                Spacer()
+                    .padding(.leading, 16)
+                    .padding(.trailing, 6)
+                //Spacer()
                 Text(text)
-                    .font(.custom("SFCompactRounded", size: 17))
+                    .font(.custom("SFCompactRounded", size: 16))
                     .foregroundColor((colorRow % 2 == 0) ? Color("Primary Text - Dark") : Color(.white))
+                    .multilineTextAlignment(.leading)
                     .listRowBackground((colorRow  % 2 == 0) ? (Color.red) : (Color.purple))
-                    .padding(.trailing)
+                    //.padding(.all, 5)
+                    .padding(.trailing, 20)
+                Spacer()
             }
         }
         .padding()
@@ -37,6 +41,6 @@ struct rowListView: View {
 
 struct rowListView_Previews: PreviewProvider {
     static var previews: some View {
-        rowListView(colorRow: 1, text: "Vamos ali testar um negócio?")
+        rowListView(colorRow: 1, text: "Ei psiu...")
     }
 }

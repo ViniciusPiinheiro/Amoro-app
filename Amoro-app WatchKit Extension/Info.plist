@@ -4,7 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SF-Compact-Rounded-Medium.otf</string>
+		<string>FontsFree-Net-SF-Compact-Rounded-Medium.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

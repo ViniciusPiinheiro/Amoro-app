@@ -31,9 +31,9 @@ struct MessageSelectionView: View {
 struct MessageSelectionView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            MessageSelectionView(categorySelected: Posts.comic)
+            MessageSelectionView(categorySelected: Posts.hot)
                 .previewDevice("Apple Watch Series 6 - 44mm")
-            MessageSelectionView(categorySelected: Posts.comic)
+            MessageSelectionView(categorySelected: Posts.hot)
                 .previewDevice("Apple Watch Series 5 - 40mm")
         }
     }
