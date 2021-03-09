@@ -14,6 +14,7 @@ struct MenuCategoryView: View {
     let beat = Categories.beatIcon
     let hot = Categories.hotOption
     
+    
     var body: some View {
         
         HStack {

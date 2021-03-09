@@ -23,11 +23,13 @@ struct PairingView: View {
                         .bold()
                         .font(.system(size: 17))
                     NavigationLink(destination: MenuCategoryView()) {
-                        ButtonView()
-
+                        Text("Fechar")
+                            
                     }
-                    .padding(.top, 20)
-                    .frame(width: 100, height: 18, alignment: .center)
+                    .background(Color("Secundary Button"))
+                    .cornerRadius(15)
+                    .padding(.trailing, 16)
+                    .padding(.leading, 16)
                 }
                 
             } else {
@@ -44,10 +46,13 @@ struct PairingView: View {
                             .bold()
                             .font(.system(size: 17))
                         NavigationLink(destination: MenuCategoryView()) {
-                            ButtonView()
+                            Text("Fechar")
+                                
                         }
-                        .padding(.top, 20)
-                        .frame(width: 100, height: 22, alignment:.center)
+                        .background(Color("Secundary Button"))
+                        .cornerRadius(15)
+                        .padding(.trailing, 10)
+                        .padding(.leading, 10)
                     }
                 }
                 

@@ -16,8 +16,7 @@ struct ButtonView: View {
                 .foregroundColor(Color("Secundary Button"))
             Text("Fechar")
                 .padding()
-        }
-    }
+        }    }
 }
 
 struct ButtonView_Previews: PreviewProvider {

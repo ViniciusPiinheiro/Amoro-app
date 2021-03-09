@@ -18,10 +18,10 @@ struct CategoryFramePurple: View {
                 Text(categoryName)
                     .font(.system(size: 16, weight: .bold, design: .rounded))
                     .foregroundColor(.white)
-                    .padding(.trailing, 24)
+                    .padding(.trailing, categoryName == "Funny" ? 10 : 24)
                 Image(iconName)
                     .resizable()
-                    .frame(width: 40, height: 35, alignment: .center)
+                    .frame(width:40, height: 35, alignment: .center)
                     .padding(.leading, 20)
             }
             .frame(width: 75, height: 75)

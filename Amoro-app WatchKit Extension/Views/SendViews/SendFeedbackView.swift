@@ -20,6 +20,7 @@ struct SendFeedbackView: View {
                     .padding(.leading, 8.0)
             }
         }
+
         .navigationBarBackButtonHidden(true)
     }
 }

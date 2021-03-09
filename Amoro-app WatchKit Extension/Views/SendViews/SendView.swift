@@ -26,10 +26,13 @@ struct SendView: View {
                     Text("amor")
                         .font(.system(size: 17))
                     NavigationLink(destination: MenuCategoryView()) {
-                        ButtonView()
+                        Text("Fechar")
+                            
                     }
-                    .padding(.top, 20)
-                    .frame(width: 100, height: 25, alignment: .center)
+                    .background(Color("Secundary Button"))
+                    .cornerRadius(15)
+                    .padding(.trailing, 12)
+                    .padding(.leading, 12)
                 }
                 
             } else {
@@ -49,10 +52,14 @@ struct SendView: View {
                             .font(.custom("SFCompactRounded", size: 17))
                         
                         NavigationLink(destination: MenuCategoryView()) {
-                            ButtonView()
+                            
+                            Text("Fechar")
+                                
                         }
-                        .padding(.top, 20)
-                        .frame(width: 100, height: 25, alignment:.center)
+                        .background(Color("Secundary Button"))
+                        .cornerRadius(15)
+                        .padding(.trailing, 8)
+                        .padding(.leading, 8)
                     }
                 }
                 

@@ -25,7 +25,6 @@
 		5C7E313C25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E313A25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf */; };
 		5C7E313D25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C7E313A25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf */; };
 		5C7E314225F6AE9C00D545DD /* rowListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E314125F6AE9C00D545DD /* rowListView.swift */; };
-		5C7E314725F6B87800D545DD /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7E314625F6B87800D545DD /* ButtonView.swift */; };
 		5C887B4325F16C7B0032274D /* CategoryFramePurple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887B4225F16C7B0032274D /* CategoryFramePurple.swift */; };
 		5C887B4B25F17BF10032274D /* PairingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887B4A25F17BF10032274D /* PairingView.swift */; };
 		5C887B5625F18A0C0032274D /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C887B5525F18A0C0032274D /* SendView.swift */; };
@@ -103,7 +102,6 @@
 		5C7E313325F6A24C00D545DD /* SF-Compact-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Rounded-Medium.otf"; sourceTree = "<group>"; };
 		5C7E313A25F6A25400D545DD /* FontsFree-Net-SF-Compact-Rounded-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FontsFree-Net-SF-Compact-Rounded-Medium.ttf"; sourceTree = "<group>"; };
 		5C7E314125F6AE9C00D545DD /* rowListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rowListView.swift; sourceTree = "<group>"; };
-		5C7E314625F6B87800D545DD /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		5C887B4225F16C7B0032274D /* CategoryFramePurple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFramePurple.swift; sourceTree = "<group>"; };
 		5C887B4A25F17BF10032274D /* PairingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingView.swift; sourceTree = "<group>"; };
 		5C887B5525F18A0C0032274D /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 			children = (
 				5CA4E95025F138B40065DF3D /* SendFeedbackView.swift */,
 				5C887B5525F18A0C0032274D /* SendView.swift */,
-				5C7E314625F6B87800D545DD /* ButtonView.swift */,
 			);
 			path = SendViews;
 			sourceTree = "<group>";
@@ -186,6 +183,14 @@
 				5CF3AA5B25F1278500B13D81 /* PairingFeedbackView.swift */,
 			);
 			path = PairingViews;
+			sourceTree = "<group>";
+		};
+		5C8C282A25F7D05600336DA1 /* ConfirmationMessageView */ = {
+			isa = PBXGroup;
+			children = (
+				5C17719125F1A58D00BD7DA0 /* ContentView.swift */,
+			);
+			path = ConfirmationMessageView;
 			sourceTree = "<group>";
 		};
 		5CB10ADC25F012F4009F53F4 = {
@@ -252,9 +257,9 @@
 				5C7E315025F6BD1400D545DD /* PairingViews */,
 				5C7E314F25F6BCF300D545DD /* MenuCategoryViews */,
 				5C7E314E25F6BCDA00D545DD /* SendViews */,
+				5C8C282A25F7D05600336DA1 /* ConfirmationMessageView */,
 				5CB10AFD25F012F6009F53F4 /* StartView.swift */,
 				5CB10B4925F01864009F53F4 /* MessageSelectionView.swift */,
-				5C17719125F1A58D00BD7DA0 /* ContentView.swift */,
 				5C7E314125F6AE9C00D545DD /* rowListView.swift */,
 			);
 			path = Views;
@@ -443,7 +448,6 @@
 				5C887B5625F18A0C0032274D /* SendView.swift in Sources */,
 				5CAF628025F675AC002142B6 /* CoupleRoom.swift in Sources */,
 				5CF3AA7625F12D7800B13D81 /* CategoryFramePink.swift in Sources */,
-				5C7E314725F6B87800D545DD /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,7 +26,7 @@ struct CategoryFramePink: View {
                 Text(categoryName)
                     .font(.system(size: 16, weight: .bold, design: .rounded))
                     .foregroundColor(.purple)
-                    .padding(.trailing, 24)
+                    .padding(.trailing, categoryName == "Hot" ? 30 : 24)
                 Image(iconName)
                     .resizable()
                     .aspectRatio(contentMode: .fill)

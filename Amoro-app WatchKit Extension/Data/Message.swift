@@ -29,8 +29,6 @@ class Message {
         // dar o tipo primitivo
         let record = CKRecord(recordType: "Message")
         //popular os campos, e transformar os valores recebidos em CKValue
-//        record["text"] = self.text as CKRecordValue
-//        record["image"] = self.image as CKRecordValue
         record.setValue(text, forKey: "text")
         record.setValue(image, forKey: "image")
         // salvar nossos record em nosso banco publico

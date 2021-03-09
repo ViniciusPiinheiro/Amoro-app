@@ -25,31 +25,41 @@ struct ContentView: View {
                         iconNumber -= 1
                         self.messageImage = icons[iconNumber-1]
                     }) {
-                        HStack(spacing: 5) {
-                            Text("<")
-                                .padding(.top, -5)
-                                .font(.system(size: 20))
+                        HStack(spacing: 8) {
+                            Image("buttonLeft")
+                                .padding(.leading, 16)
                         }
                         
                     }
+                    .buttonStyle(PlainButtonStyle())
                     .cornerRadius(50)
                     .frame(width: 35, height: 35)
                     .padding(.leading)
                     .opacity(iconNumber == 1 ? 0.0 : 1.0 )
 
-                    Image(messageImage)
+                    ZStack {
+                        Image("principalCircle")
+                            .resizable()
+                            .frame(width: 90, height: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        Image(messageImage)
+                            .resizable()
+                            .frame(width: 48.5, height: 40.75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .padding(.bottom, 20)
+                            
+                    }
                         .padding()
+                        .padding(.bottom, -18)
                     Button(action: {
                         print("Edit button was tapped")
                         iconNumber += 1
                         self.messageImage = icons[iconNumber-1]
                     }) {
                         HStack(spacing: 8) {
-                            Text(">")
-                                .padding(.top, -5)
-                                .font(.system(size: 20))
+                            Image("buttonRight")
+                                .padding(.trailing, 16)
                         }
                     }
+                    .buttonStyle(PlainButtonStyle())
                     .cornerRadius(50)
                     .frame(width: 35, height: 35)
                     .padding(.trailing)

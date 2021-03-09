@@ -7,9 +7,12 @@
 
 import SwiftUI
 
+
 struct rowListView: View {
     var colorRow:Int
     var text:String
+
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 12)
@@ -20,12 +23,12 @@ struct rowListView: View {
                     .frame(width: 20, height: 20)
                     .foregroundColor((colorRow % 2 == 0) ? Color("Primary Text - Dark") : Color("Button 2"))
                     .padding(.leading, 18)
-
+                Spacer()
                 Text(text)
-//                    .font(.custom("SFCompactRounded", size: 17))
+                    .font(.custom("SFCompactRounded", size: 17))
                     .foregroundColor((colorRow % 2 == 0) ? Color("Primary Text - Dark") : Color(.white))
                     .listRowBackground((colorRow  % 2 == 0) ? (Color.red) : (Color.purple))
-                    .padding()
+                    .padding(.trailing)
             }
         }
         .padding()
