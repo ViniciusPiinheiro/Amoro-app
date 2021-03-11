@@ -128,51 +128,34 @@ class Message {
     }
 //Crie a assinatura do CloudKit que usaremos para receber notificações de mudanças.
 
-    public let subscriptionID = "iCloud.br.com.AmoroApp"
-    private let subscriptionSavedKey = "iCloud.br.com.AmoroApp"
+//    public let subscriptionID = "iCloud.br.com.AmoroApp"
+//    private let subscriptionSavedKey = "iCloud.br.com.AmoroApp"
     
     // registrar para receber push Notifications
     
-    func setupCloudKitSubscription(completionHandler: @escaping ([Message]?, Error?)-> ()) {
+    func setupCloudKitSubscription(completionHandler: @escaping (Error?)-> ()) {
       
         
-        let predicate  = NSPredicate(value: true)
-        let subscription = CKQuerySubscription(recordType: "Message", predicate: predicate, options: .firesOnRecordCreation)
+        
+        let subscription = CKQuerySubscription(recordType: "Message", predicate: NSPredicate(value: true), options: [.firesOnRecordCreation, .firesOnRecordUpdate, .firesOnRecordDeletion])
         let notificationInfo = CKSubscription.NotificationInfo()
         notificationInfo.shouldSendContentAvailable = true
-        notificationInfo.collapseIDKey = self.image
-        notificationInfo.collapseIDKey = self.text
-        notificationInfo.alertActionLocalizationKey = "seu amor mandou uma mensagem"
+        notificationInfo.alertLocalizationArgs = ["image"]
+        notificationInfo.alertLocalizationArgs = ["text"]
+        notificationInfo.alertActionLocalizationKey = "seu_amor_mandou_uma_mensagem"
         notificationInfo.shouldBadge = true
         
         subscription.notificationInfo = notificationInfo
         
-        CKContainer.default().publicCloudDatabase.save(subscription, completionHandler: { subscription, error in
-            if error == nil {
-                print(error!.localizedDescription)
+        container.publicCloudDatabase.save(subscription) {savedSubscription, error in
+            if let error = error {
+                completionHandler(error)
             } else {
-                print("Subscription set up successfully")
-                print("Subscription ID: \(String(describing: subscription?.subscriptionID))")
+                UserDefaults.standard.set(savedSubscription!.subscriptionID, forKey: "subscriptionID")
+                completionHandler(nil)
             }
-        })
-        
-        
-        let operation = CKModifySubscriptionsOperation(subscriptionsToSave: [subscription], subscriptionIDsToDelete: [])
-        operation.modifySubscriptionsCompletionBlock = { (_, _, error) in
-            guard error == nil else {
-                return
-            }
-            
-            UserDefaults.standard.set(true, forKey: self.text)
-            UserDefaults.standard.set(true, forKey: self.image)
         }
-        operation.qualityOfService = .utility
-        
-        let container = CKContainer.default()
-        let db = container.privateCloudDatabase
-        db.add(operation)
     }
-    
 }
 
 
