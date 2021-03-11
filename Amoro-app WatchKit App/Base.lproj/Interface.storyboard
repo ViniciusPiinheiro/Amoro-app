@@ -50,9 +50,9 @@
     </scenes>
     <color key="tintColor" name="Title | Primary Button"/>
     <resources>
-        <image name="Sample" width="80" height="70"/>
+        <image name="Sample" width="80" height="67"/>
         <namedColor name="Title | Primary Button">
-            <color red="0.96470588235294119" green="0.45882352941176469" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.9649999737739563" green="0.45899999141693115" blue="0.54500001668930054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

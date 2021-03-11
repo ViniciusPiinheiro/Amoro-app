@@ -1,5 +1,7 @@
 {
+    
     "aps": {
+        "seu_amor_mandou_uma_mensagem" = "Nova Mensagem"
         "alert": {
             "body": "Test message",
             "title": "Optional title",
