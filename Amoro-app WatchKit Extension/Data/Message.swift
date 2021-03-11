@@ -11,26 +11,29 @@ import CloudKit
 class Message {
     var image: String
     var text: String
+    var roomNumber:Int
     var creatorUserID: CKRecord.ID? = nil
     var recordID : CKRecord.ID? = nil
     
     var container : CKContainer {
-        return CKContainer(identifier: "iCloud.Default_Container_For_My_App_2020_11")
+        return CKContainer(identifier: "iCloud.com.viniciuspinheiro.Amoro")
     }
     
-    init(image: String, text: String, creatorID: CKRecord.ID? = nil, recordID: CKRecord.ID? = nil) {
+    init(image: String, text: String, roomNumber:Int, creatorID: CKRecord.ID? = nil, recordID: CKRecord.ID? = nil) {
         self.image = image
         self.text = text
+        self.roomNumber = roomNumber
         self.creatorUserID = creatorID
         self.recordID = recordID
     }
     
-    func createRecord(image: String, text: String, completionHandler: @escaping (Error?) -> ()) {
+    func createRecord(completionHandler: @escaping (Error?) -> ()) {
         // dar o tipo primitivo
         let record = CKRecord(recordType: "Message")
         //popular os campos, e transformar os valores recebidos em CKValue
-        record.setValue(text, forKey: "text")
-        record.setValue(image, forKey: "image")
+        record.setValue(self.text, forKey: "text")
+        record.setValue(self.image, forKey: "image")
+        record.setValue(self.roomNumber, forKey: "roomNumber")
         // salvar nossos record em nosso banco publico
         container.publicCloudDatabase.save(record) {_, error in
             if let error = error {
@@ -53,7 +56,7 @@ class Message {
         var messageRecords : [Message] = []
         //ler todos os nossos registros e de um por um vai deixando disponivel, para realizar alguma lógica,
         operation.recordFetchedBlock = {record in
-            let message = Message(image: record["image"] as! String, text: record["text"] as! String, creatorID: record.creatorUserRecordID, recordID: record.recordID)
+            let message = Message(image: record["image"] as! String, text: record["text"] as! String, roomNumber: record["roomNumber"] as! Int, creatorID: record.creatorUserRecordID, recordID: record.recordID)
             // adicionar no nosso array
             messageRecords.append(message)
         }
@@ -79,27 +82,25 @@ class Message {
                 completionHandler(error)
             }
         }
-        
-        func updateRecordWithId(text: String, image: String, completionHandler: @escaping (Error?)-> ()){
-            container.publicCloudDatabase.fetch(withRecordID: self.recordID!) {
-                (record, error) in
-                guard let record = record, error == nil else {
-                    completionHandler(error!)
-                    return
-                }
-                
-                record["image"] = image as CKRecordValue
-                record["text"] = text as CKRecordValue
-                
-                self.container.publicCloudDatabase.save(record) {_, error in
-                    if let error = error {
-                        completionHandler(error)
-                    } else {
-                        completionHandler(nil)}
-                }
+    }
+    func updateRecordWithId(text: String, image: String, completionHandler: @escaping (Error?)-> ()){
+        container.publicCloudDatabase.fetch(withRecordID: self.recordID!) {
+            (record, error) in
+            guard let record = record, error == nil else {
+                completionHandler(error!)
+                return
+            }
+            
+            record["image"] = image as CKRecordValue
+            record["text"] = text as CKRecordValue
+            
+            self.container.publicCloudDatabase.save(record) {_, error in
+                if let error = error {
+                    completionHandler(error)
+                } else {
+                    completionHandler(nil)}
             }
         }
     }
-    
 }
 

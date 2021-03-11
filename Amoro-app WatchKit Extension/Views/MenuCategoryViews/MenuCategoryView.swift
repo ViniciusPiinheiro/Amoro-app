@@ -13,27 +13,27 @@ struct MenuCategoryView: View {
     let funny = Categories.funnyOption
     let beat = Categories.beatIcon
     let hot = Categories.hotOption
-    
+    @State var room:Int?
     
     var body: some View {
         
         HStack {
             VStack {
-                NavigationLink(destination: MessageSelectionView(categorySelected: Posts.cute)) {
+                NavigationLink(destination: MessageSelectionView(room: room, categorySelected: Posts.cute)) {
                     CategoryFramePurple(categoryName: cute.text, iconName: cute.image)
                 }
                 .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                NavigationLink(destination: MessageSelectionView(categorySelected: Posts.poke)) {
+                NavigationLink(destination: MessageSelectionView(room:room, categorySelected: Posts.poke)) {
                     CategoryFramePink(categoryName: beat.text, iconName: beat.image)
                 }
                 .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             }
             VStack {
-                NavigationLink(destination: MessageSelectionView(categorySelected: Posts.hot)) {
+                NavigationLink(destination: MessageSelectionView(room:room, categorySelected: Posts.hot)) {
                     CategoryFramePink(categoryName: hot.text, iconName: hot.image)
                 }
                 .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                NavigationLink(destination: MessageSelectionView(categorySelected: Posts.comic)) {
+                NavigationLink(destination: MessageSelectionView(room:room, categorySelected: Posts.comic)) {
                     CategoryFramePurple(categoryName: funny.text, iconName: funny.image)
                 }
                 .frame(width: 75, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -52,6 +52,6 @@ struct MenuCategoryView: View {
 
 struct MenuCategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuCategoryView()
+        MenuCategoryView(room: 2)
     }
 }

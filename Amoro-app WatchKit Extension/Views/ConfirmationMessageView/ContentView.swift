@@ -9,17 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var room:Int?
     @State var messageImage:String
     var messageText: String
     @State private var iconNumber = 1
     @State private var icons = ["Sample", "beatIcon", "cuteIcon", "funnyIcon", "hotIcon"]
+    @State private var message = Message(image: "", text: "", roomNumber: 0)
+    @State private var pushActive = false
+    //    @State private var messageImage = ""
     
     var body: some View {
         ScrollView {
             VStack {
                 HStack {
                     Button(action: {
-                        print("Edit button was tapped")
                         iconNumber -= 1
                         self.messageImage = icons[iconNumber-1]
                     }) {
@@ -34,7 +37,7 @@ struct ContentView: View {
                     .frame(width: 35, height: 35)
                     .padding(.leading)
                     .opacity(iconNumber == 1 ? 0.0 : 1.0 )
-
+                    
                     ZStack {
                         Image("principalCircle")
                             .resizable()
@@ -43,12 +46,11 @@ struct ContentView: View {
                             .resizable()
                             .frame(width: 48.5, height: 40.75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .padding(.bottom, 20)
-                            
+                        
                     }
-                        .padding()
-                        .padding(.bottom, -18)
+                    .padding()
+                    .padding(.bottom, -18)
                     Button(action: {
-                        print("Edit button was tapped")
                         iconNumber += 1
                         self.messageImage = icons[iconNumber-1]
                     }) {
@@ -75,7 +77,22 @@ struct ContentView: View {
                 .padding(.leading, 60)
                 Spacer()
                     .frame(height: 12)
-                NavigationLink(destination: SendView()) {
+                //                NavigationLink(destination: SendView(room:room)) {
+
+                
+                
+                Button(action: {
+                    pushActive = true
+                    message = Message(image: messageImage, text: messageText, roomNumber: room ?? 0)
+                    message.createRecord { (error) in
+                        if error == nil {
+                            print("foi")
+                        } else {
+                            print("Não foi")
+                        }
+                    }
+                    
+                }) {
                     Text("Enviar")
                         .foregroundColor(Color("Primary Text - Dark"))
                 }
@@ -83,6 +100,13 @@ struct ContentView: View {
                 .cornerRadius(15)
                 .padding(.trailing, 60)
                 .padding(.leading, 60)
+                
+                NavigationLink(destination: SendView(room:room), isActive: self.$pushActive) {
+                  Text("")
+                }
+                .hidden()
+                .frame(width: 0, height: 0)
+                
             }
         }
         .navigationTitle("Mensagem")

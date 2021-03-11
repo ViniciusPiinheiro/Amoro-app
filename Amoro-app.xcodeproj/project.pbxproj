@@ -255,9 +255,9 @@
 				5CB10AFD25F012F6009F53F4 /* StartView.swift */,
 				5C7E315025F6BD1400D545DD /* PairingViews */,
 				5C7E314F25F6BCF300D545DD /* MenuCategoryViews */,
-				5C7E314E25F6BCDA00D545DD /* SendViews */,
-				5C8C282A25F7D05600336DA1 /* ConfirmationMessageView */,
 				5C8C283D25F7EB5E00336DA1 /* MessageSelectionView */,
+				5C8C282A25F7D05600336DA1 /* ConfirmationMessageView */,
+				5C7E314E25F6BCDA00D545DD /* SendViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";

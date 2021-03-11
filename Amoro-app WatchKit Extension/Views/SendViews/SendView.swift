@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SendView: View {
+    @State var room:Int?
     var body: some View {
         GeometryReader { proxy in
             if proxy.size.width > 324/2.0 { // 40mm watch resolution in points
@@ -24,7 +25,7 @@ struct SendView: View {
                     }
                     Text("amor")
                         .font(.custom("SF Compact Rounded Regular", size: 17))
-                    NavigationLink(destination: MenuCategoryView()) {
+                    NavigationLink(destination: MenuCategoryView(room: room)) {
                         Text("Fechar")
                             .font(.custom("SF Compact Rounded Regular", size: 17))
                             
