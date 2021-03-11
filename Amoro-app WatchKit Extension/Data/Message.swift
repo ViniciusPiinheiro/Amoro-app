@@ -16,6 +16,7 @@ class Message {
     var roomNumber:Int
     var creatorUserID: CKRecord.ID? = nil
     var recordID : CKRecord.ID? = nil
+    var zoneID: CKRecordZone.ID?
     
     var container : CKContainer {
         return CKContainer(identifier: "iCloud.br.com.AmoroApp")
@@ -86,6 +87,8 @@ class Message {
             }
         }
     }
+    
+    
     func updateRecordWithId(text: String, image: String, completionHandler: @escaping (Error?)-> ()){
         container.publicCloudDatabase.fetch(withRecordID: self.recordID!) {
             (record, error) in
@@ -106,8 +109,25 @@ class Message {
         }
     }
     
-    public let subscriptionID = "iCloud.br.com.AmoroApp"
-    private let subscriptionSavedKey = "iCloud.br.com.AmoroApp"
+    
+    func createZone(completion: @escaping (Error?) -> Void) {
+        let recordZone = CKRecordZone(zoneID: self.zoneID!)
+        let operation = CKModifyRecordZonesOperation(recordZonesToSave: [recordZone], recordZoneIDsToDelete: [])
+        operation.modifyRecordZonesCompletionBlock = { _, _, error in
+            guard error == nil else {
+                completion(error)
+                return
+            }
+            completion(nil)
+        }
+        operation.qualityOfService = .utility
+        let container = CKContainer.default()
+        let db = container.privateCloudDatabase
+        db.add(operation)
+    }
+//
+//    public let subscriptionID = "iCloud.br.com.AmoroApp"
+//    private let subscriptionSavedKey = "iCloud.br.com.AmoroApp"
     
     func setupCloudKitSubscription(completionHandler: @escaping ([Message]?, Error?)-> ()) {
         //        let userDefaults = UserDefaults.resetStandardUserDefaults()

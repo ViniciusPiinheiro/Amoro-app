@@ -27,9 +27,6 @@ struct NotificationView: View {
                 }}
             )}
                 
-                Image("Sample")
-                Text("Amo voce")
-            
             }
         
     }
