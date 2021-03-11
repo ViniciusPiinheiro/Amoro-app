@@ -10,6 +10,7 @@ import UIKit
 import CloudKit
 
 
+
 class Message {
     var image: String
     var text: String
@@ -125,15 +126,15 @@ class Message {
         let db = container.privateCloudDatabase
         db.add(operation)
     }
-//
-//    public let subscriptionID = "iCloud.br.com.AmoroApp"
-//    private let subscriptionSavedKey = "iCloud.br.com.AmoroApp"
+//Crie a assinatura do CloudKit que usaremos para receber notificações de mudanças.
+
+    public let subscriptionID = "iCloud.br.com.AmoroApp"
+    private let subscriptionSavedKey = "iCloud.br.com.AmoroApp"
+    
+    // registrar para receber push Notifications
     
     func setupCloudKitSubscription(completionHandler: @escaping ([Message]?, Error?)-> ()) {
-        //        let userDefaults = UserDefaults.resetStandardUserDefaults()
-        //        if userDefaults.s{
-        ////
-        //   }
+      
         
         let predicate  = NSPredicate(value: true)
         let subscription = CKQuerySubscription(recordType: "Message", predicate: predicate, options: .firesOnRecordCreation)
