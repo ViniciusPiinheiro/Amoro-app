@@ -13,7 +13,7 @@ struct ContentView: View {
     @State var messageImage:String
     var messageText: String
     @State private var iconNumber = 1
-    @State private var icons = ["Sample", "beatIcon", "cuteIcon", "funnyIcon", "hotIcon"]
+    @State private var icons = ["animateIcon","sadIcon","thirstyIcon","beatIcon", "cuteIcon", "funnyIcon", "hotIcon1"]
     @State private var message = Message(image: "", text: "", roomNumber: 0)
     @State private var pushActive = false
     //    @State private var messageImage = ""
@@ -44,7 +44,7 @@ struct ContentView: View {
                             .frame(width: 90, height: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         Image(messageImage)
                             .resizable()
-                            .frame(width: 48.5, height: 40.75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 48.5, height: 40.5, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .padding(.bottom, 20)
                         
                     }
