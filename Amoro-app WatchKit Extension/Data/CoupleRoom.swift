@@ -14,7 +14,7 @@ class CoupleRoom {
     var recordID: CKRecord.ID? = nil
     var creatorUserID: CKRecord.ID? = nil
     var container: CKContainer {
-        return CKContainer(identifier: "iCloud.com.viniciuspinheiro.Amoro")
+        return CKContainer(identifier: "iCloud.br.com.AmoroApp")
     }
     
     init(roomNumber: Int,isOccupied: Int?, creatorID: CKRecord.ID? = nil, recordID: CKRecord.ID? = nil) {

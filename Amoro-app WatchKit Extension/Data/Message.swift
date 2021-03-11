@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import UIKit
 import CloudKit
+
 
 class Message {
     var image: String
@@ -16,7 +18,8 @@ class Message {
     var recordID : CKRecord.ID? = nil
     
     var container : CKContainer {
-        return CKContainer(identifier: "iCloud.com.viniciuspinheiro.Amoro")
+        return CKContainer(identifier: "iCloud.br.com.AmoroApp")
+        
     }
     
     init(image: String, text: String, roomNumber:Int, creatorID: CKRecord.ID? = nil, recordID: CKRecord.ID? = nil) {
@@ -102,5 +105,42 @@ class Message {
             }
         }
     }
-}
+    
+    public let subscriptionID = "cloudkit-Amoro-changes"
+    private let subscriptionSavedKey = "ckSubscriptionSaved"
+    
+    func setupCloudKitSubscription(completionHandler: @escaping ([Message]?, Error?)-> ()) {
+//        let userDefaults = UserDefaults.resetStandardUserDefaults()
+//        if userDefaults.s{
+////
+//   }
+        let predicate  = NSPredicate(value: true)
+        let subscription = CKQuerySubscription(recordType: "Message", predicate: predicate)
+        let notificationInfo = CKSubscription.NotificationInfo()
+        notificationInfo.shouldSendContentAvailable = true
+        notificationInfo.collapseIDKey = self.image
+        notificationInfo.collapseIDKey = self.image
+        notificationInfo.alertActionLocalizationKey = "seu amor mandou uma mensagem"
+        notificationInfo.shouldBadge = true
+        
+        subscription.notificationInfo = notificationInfo
+        
+        let operation = CKModifySubscriptionsOperation(subscriptionsToSave: [subscription], subscriptionIDsToDelete: [])
+        operation.modifySubscriptionsCompletionBlock = { (_, _, error) in
+            guard error == nil else {
+                return
+            }
+            
+            UserDefaults.standard.set(true, forKey: self.text)
+            UserDefaults.standard.set(true, forKey: self.image)
+        }
+        operation.qualityOfService = .utility
+        
+        let container = CKContainer.default()
+        let db = container.privateCloudDatabase
+        db.add(operation)
+    }
+  
+    }
+
 
