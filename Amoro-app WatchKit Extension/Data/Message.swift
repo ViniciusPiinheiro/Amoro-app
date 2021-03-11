@@ -106,24 +106,35 @@ class Message {
         }
     }
     
-    public let subscriptionID = "cloudkit-Amoro-changes"
-    private let subscriptionSavedKey = "ckSubscriptionSaved"
+    public let subscriptionID = "iCloud.br.com.AmoroApp"
+    private let subscriptionSavedKey = "iCloud.br.com.AmoroApp"
     
     func setupCloudKitSubscription(completionHandler: @escaping ([Message]?, Error?)-> ()) {
-//        let userDefaults = UserDefaults.resetStandardUserDefaults()
-//        if userDefaults.s{
-////
-//   }
+        //        let userDefaults = UserDefaults.resetStandardUserDefaults()
+        //        if userDefaults.s{
+        ////
+        //   }
+        
         let predicate  = NSPredicate(value: true)
-        let subscription = CKQuerySubscription(recordType: "Message", predicate: predicate)
+        let subscription = CKQuerySubscription(recordType: "Message", predicate: predicate, options: .firesOnRecordCreation)
         let notificationInfo = CKSubscription.NotificationInfo()
         notificationInfo.shouldSendContentAvailable = true
         notificationInfo.collapseIDKey = self.image
-        notificationInfo.collapseIDKey = self.image
+        notificationInfo.collapseIDKey = self.text
         notificationInfo.alertActionLocalizationKey = "seu amor mandou uma mensagem"
         notificationInfo.shouldBadge = true
         
         subscription.notificationInfo = notificationInfo
+        
+        CKContainer.default().publicCloudDatabase.save(subscription, completionHandler: { subscription, error in
+            if error == nil {
+                print(error!.localizedDescription)
+            } else {
+                print("Subscription set up successfully")
+                print("Subscription ID: \(String(describing: subscription?.subscriptionID))")
+            }
+        })
+        
         
         let operation = CKModifySubscriptionsOperation(subscriptionsToSave: [subscription], subscriptionIDsToDelete: [])
         operation.modifySubscriptionsCompletionBlock = { (_, _, error) in
@@ -140,7 +151,7 @@ class Message {
         let db = container.privateCloudDatabase
         db.add(operation)
     }
-  
-    }
+    
+}
 
 

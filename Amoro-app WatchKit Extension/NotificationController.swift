@@ -8,12 +8,11 @@
 import WatchKit
 import SwiftUI
 import UserNotifications
+import CloudKit
 
 class NotificationController: WKUserNotificationHostingController<NotificationView> {
      
-    @IBOutlet var titleLabel: WKInterfaceLabel!
-    @IBOutlet var iconeImage: WKInterfaceImage!
-    @IBOutlet var bodyLabel: WKInterfaceLabel!
+ 
     
     
     override var body: NotificationView {
@@ -34,6 +33,9 @@ class NotificationController: WKUserNotificationHostingController<NotificationVi
         // This method is called when a notification needs to be presented.
         // Implement it if you use a dynamic notification interface.
         // Populate your dynamic notification interface as quickly as possible.
-      
+//        let cloudkitNotification = CKNotification(fromRemoteNotificationDictionary: [String: NSObject].init())
+//        if cloudkitNotification?.notificationType == CKNotification.NotificationType.query {
+//        
+//        }
     }
 }

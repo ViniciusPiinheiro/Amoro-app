@@ -6,14 +6,21 @@
 //
 
 import WatchKit
+import ClockKit
+import UserNotifications
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (completionHandler: Bool, error: Error?) in
+        if  true {
+            print("né que ele deixou")
+        }
         // Perform any final initialization of your application.
     }
 
     func applicationDidBecomeActive() {
+        
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
@@ -52,4 +59,5 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
         }
     }
 
+}
 }
