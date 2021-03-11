@@ -591,7 +591,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Amoro-app WatchKit Extension/Amoro-app WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Amoro-app WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = NV6658KLR4;
+				DEVELOPMENT_TEAM = 88LW56X3Q3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Amoro-app WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -599,7 +599,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.viniciuspinheiro.Amoro-app.watchkitapp.watchkitextension-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viniciuspinheiro.Amoro-app.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -616,7 +616,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Amoro-app WatchKit Extension/Amoro-app WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Amoro-app WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = NV6658KLR4;
+				DEVELOPMENT_TEAM = 88LW56X3Q3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Amoro-app WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -624,7 +624,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.viniciuspinheiro.Amoro-app.watchkitapp.watchkitextension-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viniciuspinheiro.Amoro-app.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
