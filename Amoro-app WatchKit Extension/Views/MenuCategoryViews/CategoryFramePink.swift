@@ -24,9 +24,9 @@ struct CategoryFramePink: View {
         ZStack {
             VStack {
                 Text(categoryName)
-                    .font(.custom("SF Compact Rounded Semibold", size: 16))
-                    .foregroundColor(.purple)
-                    .padding(.trailing, categoryName == "Hot" ? 30 : 24)
+                    .font(.custom("SF Compact Rounded Semibold", size: 14))
+                    .foregroundColor(Color("Primary Text - Dark"))
+                    .padding(.trailing, categoryName == "Ousadas" ? 8 : 10)
                 Image(iconName)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -43,7 +43,7 @@ struct CategoryFramePink: View {
 
 struct CategoryFramePink_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryFramePink(categoryName: "Test", iconName: "Sample")
+        CategoryFramePink(categoryName: "Pedidos", iconName: "Sample")
     }
 }
 

@@ -14,7 +14,10 @@ struct SendView: View {
             if proxy.size.width > 324/2.0 { // 40mm watch resolution in points
                 VStack {
                     Image("sendedIcon")
-                    Text("Sua Mensagem")
+                        .resizable()
+                        .padding(.top)
+                        .frame(width: 60, height: 54)
+                    Text("Sua mensagem")
                         .multilineTextAlignment(.center)
                         .font(.custom("SF Compact Rounded Regular", size: 17))
                     HStack {
@@ -25,6 +28,7 @@ struct SendView: View {
                     }
                     Text("amor")
                         .font(.custom("SF Compact Rounded Regular", size: 17))
+                        .padding(.bottom)
                     NavigationLink(destination: MenuCategoryView()) {
                         Text("Fechar")
                             .font(.custom("SF Compact Rounded Regular", size: 17))
@@ -40,6 +44,9 @@ struct SendView: View {
                 ScrollView {
                     VStack {
                         Image("sendedIcon")
+                            .resizable()
+                            .padding(.top)
+                            .frame(width: 60, height: 54)
                         Text("Sua Mensagem")
                             .multilineTextAlignment(.center)
                             .font(.custom("SFCompactRounded", size: 17))
@@ -51,6 +58,7 @@ struct SendView: View {
                                 .font(.custom("SFCompactRounded", size: 17))                        }
                         Text("amor")
                             .font(.custom("SFCompactRounded", size: 17))
+                            .padding(.bottom)
                         
                         NavigationLink(destination: MenuCategoryView()) {
                             

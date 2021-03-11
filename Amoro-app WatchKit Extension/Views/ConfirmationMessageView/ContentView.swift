@@ -13,7 +13,7 @@ struct ContentView: View {
     @State var messageImage:String
     var messageText: String
     @State private var iconNumber = 1
-    @State private var icons = ["animateIcon","sadIcon","thirstyIcon","beatIcon", "cuteIcon", "funnyIcon", "hotIcon1"]
+    @State private var icons = ["animateIcon","sadIcon","thirstyIcon","beatIcon1", "cuteIcon1", "funnyIcon1", "hotIcon1"]
     @State private var message = Message(image: "", text: "", roomNumber: 0)
     @State private var pushActive = false
     
@@ -43,7 +43,7 @@ struct ContentView: View {
                             .frame(width: 90, height: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         Image(messageImage)
                             .resizable()
-                            .frame(width: 48.5, height: 40.5, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: messageImage == "cuteIcon1" ? 44 : 48.5, height: 40, alignment: .center)
                             .padding(.bottom, 20)
                         
                     }
@@ -113,9 +113,9 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView(messageImage: "Sample", messageText: "Se você abrir a boca sai miau")
+            ContentView(messageImage: "cuteIcon1", messageText: "Se você abrir a boca sai miau")
                 .previewDevice("Apple Watch Series 6 - 40mm")
-            ContentView(messageImage: "Sample", messageText: "Se você abrir a boca sai miau")
+            ContentView(messageImage: "animateIcon", messageText: "Se você abrir a boca sai miau")
                 .previewDevice("Apple Watch Series 6 - 44mm")
         }
     }
