@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MessageSelectionView: View {
-    @State var room:Int?
+
     var categorySelected = [Posts]()
     
     var body: some View {
@@ -16,7 +16,7 @@ struct MessageSelectionView: View {
         ScrollView {
             VStack {
                 ForEach(0..<categorySelected.count) { i in
-                    NavigationLink(destination: ContentView(room: room,messageImage: "Sample", messageText: categorySelected[i].text)) {
+                    NavigationLink(destination: ContentView(messageImage: "Sample", messageText: categorySelected[i].text)) {
                         rowListView(colorRow: categorySelected[i].id, text: categorySelected[i].text)
                     }
                     .frame(width: 164, height: 54, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -33,9 +33,9 @@ struct MessageSelectionView: View {
 struct MessageSelectionView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            MessageSelectionView(room: 2,categorySelected: Posts.hot)
+            MessageSelectionView(categorySelected: Posts.hot)
                 .previewDevice("Apple Watch Series 6 - 44mm")
-            MessageSelectionView(room: 2, categorySelected: Posts.hot)
+            MessageSelectionView(categorySelected: Posts.hot)
                 .previewDevice("Apple Watch Series 5 - 40mm")
         }
     }

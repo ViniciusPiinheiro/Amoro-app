@@ -9,14 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var room:Int?
+    
     @State var messageImage:String
     var messageText: String
     @State private var iconNumber = 1
-    @State private var icons = ["Sample", "beatIcon", "cuteIcon", "funnyIcon", "hotIcon"]
+    @State private var icons = ["animateIcon","sadIcon","thirstyIcon","beatIcon", "cuteIcon", "funnyIcon", "hotIcon1"]
     @State private var message = Message(image: "", text: "", roomNumber: 0)
     @State private var pushActive = false
-    //    @State private var messageImage = ""
     
     var body: some View {
         ScrollView {
@@ -44,7 +43,7 @@ struct ContentView: View {
                             .frame(width: 90, height: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         Image(messageImage)
                             .resizable()
-                            .frame(width: 48.5, height: 40.75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 48.5, height: 40.5, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .padding(.bottom, 20)
                         
                     }
@@ -77,13 +76,11 @@ struct ContentView: View {
                 .padding(.leading, 60)
                 Spacer()
                     .frame(height: 12)
-                //                NavigationLink(destination: SendView(room:room)) {
-
-                
                 
                 Button(action: {
                     pushActive = true
-                    message = Message(image: messageImage, text: messageText, roomNumber: room ?? 0)
+                    guard let room = UserDefaults.standard.value(forKey: "room") else { return }
+                    message = Message(image: messageImage, text: messageText, roomNumber: room as! Int)
                     message.createRecord { (error) in
                         if error == nil {
                             print("foi")
@@ -101,7 +98,7 @@ struct ContentView: View {
                 .padding(.trailing, 60)
                 .padding(.leading, 60)
                 
-                NavigationLink(destination: SendView(room:room), isActive: self.$pushActive) {
+                NavigationLink(destination: SendView(), isActive: self.$pushActive) {
                   Text("")
                 }
                 .hidden()

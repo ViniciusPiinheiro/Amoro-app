@@ -32,13 +32,6 @@ class Posts: Identifiable {
     
     static let comic = [
         Posts(title: "Cômicas", id: 0, text: "Se você abrir a boca sai miau"),
-        Posts(id: 1, text: "Ohayou"),
-        Posts(id: 2, text: "Ohayou"),
-        Posts(id: 3, text: "Ohayou"),
-        Posts(id: 4, text: "Ohayou"),
-        Posts(id: 5, text: "Ohayou"),
-        Posts(id: 6, text: "Ohayou"),
-        Posts(id: 7, text: "Ohayou")
     ]
     
     static let poke = [
@@ -60,7 +53,6 @@ class Posts: Identifiable {
         Posts(id: 4, text: "Hoje tem..."),
         Posts(id: 5, text: "Você me da água na boca"),
         Posts(id: 6, text: "Estou só..."),
-        Posts(id: 7, text: "Ohayou")
     ]
     
 }
