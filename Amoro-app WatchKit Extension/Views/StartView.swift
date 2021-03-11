@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import CloudKit
 
 struct StartView: View {
     
@@ -29,8 +28,8 @@ struct StartView: View {
                     .frame(height: 12)
                 
                 TextField("", text: $partnerCode, onCommit: {
-                    let partnerCodeInt = Int(partnerCode)
-                    var coupleRoom = CoupleRoom(roomNumber: partnerCodeInt ?? 0, isOccupied: 0)
+                    guard let partnerCodeInt = Int(partnerCode) else { return }
+                    var coupleRoom = CoupleRoom(roomNumber: partnerCodeInt, isOccupied: 0)
                     coupleRoom.readRecords { (records, error) in
                         if error != nil {               
                             print("Não foi")
@@ -38,11 +37,12 @@ struct StartView: View {
                             for room in records ?? [] {
                                 if (partnerCodeInt == Int(room.roomNumber)) {
                                     existRoom = true
-                                    coupleRoom = CoupleRoom(roomNumber: partnerCodeInt ?? 0, isOccupied: 1)
+                                    coupleRoom = CoupleRoom(roomNumber: partnerCodeInt, isOccupied: 1)
                                     coupleRoom.createRecord { (error) in
                                         if(error == nil) {
                                             print("Foi")
                                             self.pushActive = true
+                                            UserDefaults.standard.setValue(partnerCodeInt, forKey: "room")
                                             
                                         } else {
                                             print("Não foi")
@@ -56,7 +56,7 @@ struct StartView: View {
                     
                 })
                 .padding()
-                NavigationLink(destination: PairingView(room: Int(partnerCode)), isActive: self.$pushActive) {
+                NavigationLink(destination: PairingView(), isActive: self.$pushActive) {
                   Text("")
                 }
                 .hidden()
