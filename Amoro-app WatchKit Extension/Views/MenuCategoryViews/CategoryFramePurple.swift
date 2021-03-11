@@ -16,12 +16,12 @@ struct CategoryFramePurple: View {
         ZStack {
             VStack {
                 Text(categoryName)
-                    .font(.custom("SF Compact Rounded Semibold", size: 16))
+                    .font(.custom("SF Compact Rounded Semibold", size: 14))
                     .foregroundColor(.white)
-                    .padding(.trailing, categoryName == "Funny" ? 10 : 24)
+                    .padding(.trailing, categoryName == "Fofas" ? 24 : 9)
                 Image(iconName)
                     .resizable()
-                    .frame(width:40, height: 35, alignment: .center)
+                    .frame(width: iconName == "cuteIcon" ? 36 : 40, height: iconName == "cuteIcon" ? 35.5 : 35, alignment: .center)
                     .padding(.leading, 20)
             }
             .frame(width: 75, height: 75)
@@ -33,6 +33,6 @@ struct CategoryFramePurple: View {
 
 struct CategoryFramePurple_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryFramePurple(categoryName: "Test", iconName: "Sample")
+        CategoryFramePurple(categoryName: "Fofas", iconName: "Sample")
     }
 }

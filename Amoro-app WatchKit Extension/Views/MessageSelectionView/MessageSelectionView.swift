@@ -16,7 +16,7 @@ struct MessageSelectionView: View {
         ScrollView {
             VStack {
                 ForEach(0..<categorySelected.count) { i in
-                    NavigationLink(destination: ContentView(messageImage: "Sample", messageText: categorySelected[i].text)) {
+                    NavigationLink(destination: ContentView(messageImage: "animateIcon", messageText: categorySelected[i].text)) {
                         rowListView(colorRow: categorySelected[i].id, text: categorySelected[i].text)
                     }
                     .frame(width: 164, height: 54, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)

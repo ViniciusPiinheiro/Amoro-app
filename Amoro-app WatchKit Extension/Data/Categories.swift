@@ -21,10 +21,10 @@ class Categories {
 
 
 extension Categories {
-    static let cuteOption = Categories(image: "cuteIcon", text: "Cute")
-    static let funnyOption = Categories(image: "funnyIcon", text: "Funny")
-    static let beatIcon = Categories(image: "beatIcon", text: "Beat")
-    static let hotOption = Categories(image: "hotIcon", text: "Hot")
+    static let cuteOption = Categories(image: "cuteIcon", text: "Fofas")
+    static let funnyOption = Categories(image: "funnyIcon", text: "Cômicas")
+    static let beatIcon = Categories(image: "beatIcon", text: "Pedidos")
+    static let hotOption = Categories(image: "hotIcon", text: "Ousadas")
 }
 
 
