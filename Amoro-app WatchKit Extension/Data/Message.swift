@@ -14,7 +14,7 @@ import CloudKit
 class Message {
     var image: String
     var text: String
-    var roomNumber:Int
+    var roomNumber: Int
     var creatorUserID: CKRecord.ID? = nil
     var recordID : CKRecord.ID? = nil
     var zoneID: CKRecordZone.ID?
@@ -76,6 +76,7 @@ class Message {
             }
         }
         // executar, se não der erro
+        
         container.publicCloudDatabase.add(operation)
     }
     
@@ -111,27 +112,7 @@ class Message {
     }
     
     
-//    func createZone(completion: @escaping (Error?) -> Void) {
-//        let recordZone = CKRecordZone(zoneID: self.zoneID!)
-//        let operation = CKModifyRecordZonesOperation(recordZonesToSave: [recordZone], recordZoneIDsToDelete: [])
-//        operation.modifyRecordZonesCompletionBlock = { _, _, error in
-//            guard error == nil else {
-//                completion(error)
-//                return
-//            }
-//            completion(nil)
-//        }
-//        operation.qualityOfService = .utility
-//        let container = CKContainer.default()
-//        let db = container.privateCloudDatabase
-//        db.add(operation)
-//    }
-//Crie a assinatura do CloudKit que usaremos para receber notificações de mudanças.
 
-//    public let subscriptionID = "iCloud.br.com.AmoroApp"
-//    private let subscriptionSavedKey = "iCloud.br.com.AmoroApp"
-    
-    // registrar para receber push Notifications
     
     func setupCloudKitSubscription(completionHandler: @escaping (Error?)-> ()) {
       
